@@ -1,6 +1,6 @@
 # Go Up Number!
 
-This book is a user manual for *Go up Number!* or `gun` — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.
+This is the user manual for *Go up Number!* or `gun` — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.
 
 The main design goal of `gun` is for it to be *fun*!
 It might also be secure and stuff but we'll have to see.
