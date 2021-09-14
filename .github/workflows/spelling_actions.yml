@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - run: apt install aspell
+    - run: sudo apt install -y aspell
     - name: run spellcheck
       run: sh spellcheck.sh
