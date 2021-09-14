@@ -8,11 +8,6 @@ matrix:
       - .aspell.en.pws
   pipeline:
   - pyspelling.filters.markdown:
-  - pyspelling.filters.html:
-    comments: false
-    ignores:
-    - code
-    - pre
   sources:
   - '**/*.md'
   default_encoding: utf-8
