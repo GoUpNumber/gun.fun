@@ -1,12 +1,12 @@
 # Backup and Recovery
 
-In your gun directory (usuallly `~/.gun`) there are a couple of files that will cause pain if you lose them.
+In your gun directory (usually `~/.gun`) there are a couple of files that will cause pain if you lose them.
 
 
 ## `seed.txt`
 
 `seed.txt` contains your secret [BIP39] seed phrase.
-If you lose seed.txt you lose all your coins.
+If you lose `seed.txt` you lose all your coins.
 If someone else gets their hands on it they can take all your coins.
 `seed.txt` never changes so you only ever need to take one backup.
 

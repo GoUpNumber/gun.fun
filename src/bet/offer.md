@@ -26,7 +26,7 @@ gun bet offer -m "bro I am so confident it tails atm" all tails  0.01#h00.ooo#/r
 You choose the outcome you want to bet on (`<choice>`) and the `<value>` you are willing to risk to obtain the proposal's coins.
 The offerer also pays and chooses the fee of the bet transaction with the `--fee`.
 
-What value of `<choice>` is acceptable can be determined from the event-url.
+What value of `<choice>` is acceptable can be determined from the `event-url`.
 Here are some examples of how this works:
 
 - `red_blue.winner` has `red` and `blue` as possible outcomes.

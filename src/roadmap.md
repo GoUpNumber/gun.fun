@@ -5,7 +5,7 @@
 ## Betting and Taproot
 
 Taproot can improve the betting protocol in several ways.
-I have a protocol in mind that could acheive the following:
+I have a protocol in mind that could achieve the following:
 
 1. All transactions involved would be taproot key spends.
 2. The two parties would be able to cooperatively resolve a bet if the oracle were to fail to attest.

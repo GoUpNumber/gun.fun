@@ -23,10 +23,10 @@ The main configuration file is in `~/.gun/config.json` and looks something like 
 
 Which network the wallet operates on:
 
-- `bitcoin`: The bitcoin mainnet.
+- `bitcoin`: The bitcoin  Bitcoin.
 - `testnet`: the Bitcoin testnet.
 - `regtest`: A local regtest node.
-- `signet`: A *signet* tesnet (not supported yet: [issue#21](https://github.com/LLFourn/gun/issues/21)).
+- `signet`: A *signet* testnet (not supported yet: [issue#21](https://github.com/LLFourn/gun/issues/21)).
 
 ### `kind`
 

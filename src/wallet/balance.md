@@ -6,13 +6,13 @@ Get the balance of your wallet.
 gun balance
 ```
 
-Buf often you want to sync first.
+ But often you want to sync first.
 
 ```
 gun -s balance
 ```
 
-The output has the follwing fields:
+The output has the following fields:
 
 - **confirmed**: coins that are owned by this wallet and confirmed in the chain (but not **in-use**).
 - **unconfirmed**: coins that have been sent to your wallet but haven't been confirmed (and not **in-use**).

@@ -5,7 +5,7 @@ Apart from the default human readable style format any command can be modified t
 ## JSON `-j, --json`
 
 This format is output for reading into other software.
-Coin amounts are formatted as sats and DateTimes will be formatted as unix timestamps.
+Coin amounts are formatted as sats and  `DateTime`s will be formatted as UNIX timestamps.
 
 `gun -j <command> ..` will output JSON.
 
@@ -18,7 +18,7 @@ gun -j bet list | jq 'map(select(.state == "lost").risk) | add'
 
 ## Tab separated `-t, --tabs`
 
-This format it useful for unix command line tools because it tab separates each field so things like `cut(1)` just work.
+This format it useful for UNIX command line tools because it tab separates each field so things like `cut(1)` just work.
 Output is tab separated and coin amounts are simply formatted as integers.
 
 The following will output how much you've lost in bets

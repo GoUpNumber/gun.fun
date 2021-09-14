@@ -1,6 +1,6 @@
 # gun bet reply
 
-Reply with an encryped message rather than an [offer](./offer.md) to a [proposal](./propose.md).
+Reply with an encrypted message rather than an [offer](./offer.md) to a [proposal](./propose.md).
 
 ## Synopsis
 

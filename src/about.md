@@ -13,9 +13,8 @@ This is the only reason to use this wallet at the moment so you should only put 
 ## Architecture
 
 [`gun`] is written in rust and uses the [Bitcoin Dev Kit](https://bitcoindevkit.org/) to implement the underlying wallet functionality[^1].
-It needs an [esplora backend] server to provide blockchain data and by default it uses [mempool.space](https://mempool.space).
+It needs a trusted [esplora backend] server to provide blockchain data and by default it uses [mempool.space](https://mempool.space).
 `gun`'s strict dependence on esplora is its greatest weakness.
-I hope to improve this situtation at some point.
 
 ## Contributing
 
@@ -26,4 +25,4 @@ It'd also be helpful if you could improve this book whose repository is [here](h
 
 [`gun`]: https://github.com/LLFourn/gun
 [esplora backend]: https://github.com/Blockstream/electrs
-[^1]: Right now at uses a branch of bdk at [llfourn/bdk](https://github.com/llfourn/bdk/tree/gun).
+[^1]: Right now it uses a branch of bdk at [llfourn/bdk](https://github.com/llfourn/bdk/tree/gun).

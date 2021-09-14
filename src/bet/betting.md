@@ -21,7 +21,7 @@ For this experiment I developed an oracle called [`olivia`](https://github.com/L
 
 To find events I developed a simple oracle explorer [outcome.observer](https://outcome.observer) which can browse the events of an oracle.
 
-## Protcol Details
+## Protocol Details
 
 The proposal contains a public key which the offerer will use to encrypt their offer.
 The offer contains a public key followed by a ciphertext.
@@ -34,7 +34,7 @@ The script locking the coins is a **1-of-2** with keys like:
 ```
 
 Where `P1` and `O1` represent the public key of the proposer and the outcome they are betting on respectively (and `P1` and `P2` for the offerer).
-If the oracle releases `O1` then the propser may take the coins otherwise if the oracle releases `O2` the offerer can take the coins.
+If the oracle releases `O1` then the proposer may take the coins otherwise if the oracle releases `O2` the offerer can take the coins.
 The Diffie-Hellman keys is also used to produce secret randomness (`R1` and `R2`) which both parties use to randomize the output so it's really:
 
 ```
@@ -48,8 +48,8 @@ Note there is no real hurry for them to do so except that the coins can be [reco
 ## Security
 
 The main thing for things to go wrong here is for a malicious party to somehow cause a bet transaction to be confirmed *after* the event outcome is already known and has resulted in their favor.
-For example in a bet on a football match imagine if the propser only takes the offer after the team they are betting on scores the first goal!
-The offerer must protect against this by cancelling their offer before the game starts. See [`gun bet cancel`](./cancel.md).
+For example in a bet on a football match imagine if the proposer only takes the offer after the team they are betting on scores the first goal!
+The offerer must protect against this by canceling their offer before the game starts. See [`gun bet cancel`](./cancel.md).
 
 The proposer must be careful about taking offers with a low transaction fee.
 If the transaction fee is low it may be stuck in the mempool until after the game starts.
@@ -65,7 +65,7 @@ Such an observer will be able to figure out:
 2. Where the bet transaction is in the blockchain and which output is the bet output and whose change output is whose (they can see the proposal's inputs so they will be able to find it).
 3. Which inputs belong to the proposer and which belong to the offerer (the inputs belonging to the proposer are in the proposal).
 4. How much was bet by each party (they know how much the proposer is risking and the value in the bet output).
-5. Which change output on the bet transaction belongs to the proposer and offer respectiely (the proposer puts their change in the proposal so the other one must belong to offerer).
+5. Which change output on the bet transaction belongs to the proposer and offer respectively (the proposer puts their change in the proposal so the other one must belong to offerer).
 
 They should be unable to determine:
 
@@ -73,7 +73,7 @@ They should be unable to determine:
 2. Whether an offer is a real offer or an encrypted message or otherwise random gibberish.
 3. Who won the bet (they don't know who bet on what).
 
-The basic summary of this is that privacy for the offerer is relatively good but for the propser it is relatively bad.
+The basic summary of this is that privacy for the offerer is relatively good but for the proposer it is relatively bad.
 
 It's important to note that even if you do the bet privately (via direct messages) a blockchain observer can easily distinguish bet transactions from normal transactions with this protocol.
 Here's an [example transaction](https://mempool.space/tx/31e515c9316699f82887c68dc2dff04ff72b598e7e41a2f5cd0fccbc09379106) which shows what it looks like when a bet is claimed.

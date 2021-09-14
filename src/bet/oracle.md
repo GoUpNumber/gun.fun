@@ -30,7 +30,7 @@ Display details about an oracle. For example,
 gun bet oracle show h00.ooo
 ```
 
-*TODO: document the output here*
+*TODD: document the output here*
 
 
 
