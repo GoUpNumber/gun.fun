@@ -2,12 +2,11 @@ matrix:
 - name: Markdown
   aspell:
     lang: en
+    M: true
   dictionary:
     encoding: utf-8
     wordlists:
       - .aspell.en.pws
-  pipeline:
-  - pyspelling.filters.markdown:
   sources:
-  - '**/*.md'
+  - 'src/**/*.md'
   default_encoding: utf-8
