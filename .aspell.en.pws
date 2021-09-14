@@ -1,11 +1,13 @@
-personal_ws-1.1 en 35 
+personal_ws-1.1 en 38 
 BIP
 BTC
 Dev
 Diffie
 GuN
 JSON
+LDK
 LLFourn's
+PSBTs
 Roadmap
 UTXOs
 agaisnt
@@ -34,3 +36,4 @@ toolchain
 tx
 unencrypted
 vbyte
+xpub
