@@ -11,7 +11,7 @@
   - [send](./wallet/send.md)
   - [split](./wallet/split.md)
   - [tx](./wallet/tx.md)
-  - [`utxo`](./wallet/utxo.md)
+  - [utxo](./wallet/utxo.md)
 - [Betting](./bet/betting.md)
   - [oracle](./bet/oracle.md)
   - [propose](./bet/propose.md)
