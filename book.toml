@@ -3,4 +3,4 @@ authors = ["LLFourn"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Go Up Number CLI Wallet"
+title = "Go Up Number Bitcoin Wallet"

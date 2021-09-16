@@ -8,10 +8,6 @@ Show more details about a bet.
 gun bet show [options] <id>
 ```
 
-## Description
-
-Shows more details about a bet.
-
 ## Options
 
 ### `-r, --raw`

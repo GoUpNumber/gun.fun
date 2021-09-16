@@ -2,6 +2,10 @@
 
 Sends coins to an address.
 
+> ⚠️ Sending your coins gives them to someone else.
+> In general this should be avoided wherever possible.
+
+
 ## Synopsis 
 
 ```

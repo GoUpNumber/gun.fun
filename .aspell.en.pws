@@ -1,20 +1,24 @@
-personal_ws-1.1 en 38 
+personal_ws-1.1 en 44 
 BIP
 BTC
+COVID
 Dev
 Diffie
+Fournier
 GuN
 JSON
 LDK
 LLFourn's
 PSBTs
 Roadmap
+Subcommands
+UTXO
 UTXOs
-agaisnt
 backend
 backends
 bdk
 blockchain
+cancelled
 ciphertext
 decrypt
 decrypted
@@ -31,9 +35,11 @@ repo
 roadmap
 sats
 stdin
+tauri
 testnet
 toolchain
 tx
 unencrypted
+utxo
 vbyte
 xpub

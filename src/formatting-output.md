@@ -19,7 +19,6 @@ gun -j bet list | jq 'map(select(.state == "lost").risk) | add'
 ## Tab separated `-t, --tabs`
 
 This format it useful for UNIX command line tools because it tab separates each field so things like `cut(1)` just work.
-Output is tab separated and coin amounts are simply formatted as integers.
 
 The following will output how much you've lost in bets
 

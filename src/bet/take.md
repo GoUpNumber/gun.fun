@@ -14,19 +14,16 @@ gun bet take [options] <id> <encrypted-offer>
 It is up to the user to figure out what proposal this offer was in relation to.
 You may use `gun bet list` to see the ids of all your proposals.
 
+Taking the offer will prompt you to broadcast the bet transaction with the bet output.
+
 ### Security
 
 Try to avoid taking an offer close to when an event transpires.
-If the offer's fee is low the bet transaction may not be confirmed until after the event has transpired and then a cheating offerer may be able to cancel the bet if it went agaisnt them.
-
+If the offer's fee is low the bet transaction may not be confirmed until after the event has transpired. 
+A cheating offerer may then try to cancel the bet if things go against them before it confirms.
 
 ## Options
 
-### `--print-tx`
+{{#include ../yes_opt.md}}
+{{#include ../print_tx_opt.md}}
 
-Print the bet transaction as hex rather than broadcast it to the network.
-This assumes you will broadcast it manually.
-
-### `-y, --yes`
-
-Take the offer and broadcast without prompting.

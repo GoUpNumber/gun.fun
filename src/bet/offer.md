@@ -26,8 +26,10 @@ gun bet offer -m "bro I am so confident it tails atm" all tails  0.01#h00.ooo#/r
 You choose the outcome you want to bet on (`<choice>`) and the `<value>` you are willing to risk to obtain the proposal's coins.
 The offerer also pays and chooses the fee of the bet transaction with the `--fee`.
 
+### Choosing an outcome
+
 What value of `<choice>` is acceptable can be determined from the `event-url`.
-Here are some examples of how this works:
+Here are some examples of how this works for two teams `red` and `blue`:
 
 - `red_blue.winner` has `red` and `blue` as possible outcomes.
 - `red_blue.vs` has the outcomes `red_win`, `blue_win` and `draw`. Because it has three outcomes you can't use `gun` to bet on it.
@@ -42,15 +44,19 @@ After the proposer sees your offer they may take it at their own discretion.
 This includes taking the offer **after the outcome of the bet is already known** i.e. cheating.
 You must protect yourself against this by [canceling](./cancel.md) the offer before a malicious proposer can take advantage of this.
 
+
+### Privacy
+
+Your offer should be indistinguishable from random gibberish to anyone but the proposer.
+This doesn't mean you have to post your offer publicly.
+In practice it's better to send the proposer a direct message with your offer unless you are trying to advertise the fact that you are using `gun` for your own satisfaction.
+
 ### Choosing a fee
 
-In general you should use a low fee for your offer.
+In general you should use a low fee for your offer unless you are betting very close to the event.
 Proposers will generally not discriminate based on the fee and would rather you put as much value in the bet as possible.
-As long as the fee is high enough so the proposer is confident it will confirm before the event transpires it shouldn't matter.
-
 
 ## Options
-
 
 ### `-m, --message <message>`
 

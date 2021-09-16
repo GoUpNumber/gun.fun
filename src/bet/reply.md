@@ -11,7 +11,7 @@ gun bet reply [OPTIONS] <proposal>
 Taunt your opponent
 
 ```
-echo "0.01BTC? cmon whole coins or nothing bro" | gun bet reply  0.01#h00.ooo#/random/2021-09-09T08:14:00/heads_tails.winner#ഩǠɢѩչਠനՎȆଞગਐעͻڢѓӫҹڣလߛϊرКɏҵฤຂΘݸլၷ࿋னЉඇໜЈবɇοȾಋѻݙȁ࿅ผɱƂइŏǱێեЯಐۇฝဆসϑ࿖ɀჵਊၒβԼјஊڠၮɈ།
+echo "I just wanted to wish you luck on this bet" | gun bet reply  0.01#h00.ooo#/random/2021-09-09T08:14:00/heads_tails.winner#ഩǠɢѩչਠനՎȆଞગਐעͻڢѓӫҹڣလߛϊرКɏҵฤຂΘݸլၷ࿋னЉඇໜЈবɇοȾಋѻݙȁ࿅ผɱƂइŏǱێեЯಐۇฝဆসϑ࿖ɀჵਊၒβԼјஊڠၮɈ།
 ```
 
 ## Options

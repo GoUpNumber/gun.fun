@@ -20,4 +20,4 @@ gun bet tag remove <bet-id> <tag>
 ## Description
 
 Tagging helps you remember how a bet originated.
-It can also be done at bet creation time with the `--tags` flag.
+It can also be done at bet creation time with the [`--tags`](./offer.md#-t---tags-tags) flag.

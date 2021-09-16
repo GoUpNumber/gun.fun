@@ -1,12 +1,12 @@
 # Go Up Number!
 
-This is the user manual for *Go up Number!* or `gun` — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.
+This is the user manual for *Go up Number!* — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.
 
 The main design goal of `gun` is for it to be *fun*!
 It might also be secure and stuff but we'll have to see.
 `gun` is **alpha quality** in all respects. 
 
-The defining feature of `gun` is [peer-to-peer betting](./bet/betting.md) by copy-pasting gibberish.
+The defining feature of `gun` is the [`bet`](./bet/betting.md) command which lets you do peer-to-peer betting by copy-pasting gibberish.
 This is the only reason to use this wallet at the moment so you should only put what you need to play with (and are willing to lose).
 
 ## Architecture

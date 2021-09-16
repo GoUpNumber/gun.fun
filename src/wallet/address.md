@@ -1,7 +1,17 @@
 # gun address
 
-Get or view addresses.
-Note that in general these commands don't show change (sometimes called *internal*) addresses.
+Get view addresses.
+
+## Synopsis
+
+```
+gun address <subcommand>
+```
+
+## Subcommands
+
+Note that these commands don't interact with *internal* (change) addresses.
+You can see change address with coins in [`gun utxo list`](./utxo.md#list).
 
 ### `gun address new`
 
@@ -20,7 +30,4 @@ List all addresses given out by this wallet.
 ### `gun address show <address>`
 
 Get more details about a particular address.
-
-
-
 

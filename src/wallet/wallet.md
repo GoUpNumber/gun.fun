@@ -8,5 +8,6 @@ Here are the commands:
 - [`gun send`](./send.md) send coins out of a wallet.
 - [`gun split`](./split.md) split coins into evenly sized UTXOs.
 - [`gun tx`](./tx.md) view transactions made by this wallet.
+- [`gun utxo`](./utxo.md) view UTXOs owned by this wallet.
 
 

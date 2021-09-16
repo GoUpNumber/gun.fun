@@ -32,11 +32,11 @@ Note carefully that **you can only bet on events with two outcomes**.
 
 `<value>` can either a specific quantity of Bitcoin with denomination or `all` to bet all available coins in the wallet.
 
-The command will output the proposal as a `#` delimited string with the binary data encoded with `base2048`.
+The command will output the proposal as a `#` delimited string with the binary data encoded with [base2048].
 
-The binary data includes the on-chain input the proposer is using for the bet.
-These are unencrypted and viewable by anyone.
-Therefore, **if you are posting the proposal publicly you must first ask yourself whether you really want these on-chain inputs to be linked to the identity that posts the proposal**.
+> ⚠️The binary data includes the on-chain input the proposer is using for the bet.
+> These are unencrypted and viewable by anyone.
+> Therefore, **if you are posting the proposal publicly you must first ask yourself whether you really want these on-chain inputs to be linked to the identity that posts the proposal**.
 
 ### Change
 
@@ -54,3 +54,5 @@ Add human readable tag to the bet as you create it.
 ### `-y, --yes`
 
 Don't prompt me just answer "yes" to whatever questions are asked.
+
+[base2048]: https://docs.rs/base2048

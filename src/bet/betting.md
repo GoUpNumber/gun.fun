@@ -4,16 +4,18 @@ The main reason I developed `gun` was to be able to experiment with Bitcoin bett
 I originally wrote down the idea in *[How to Make a Prediction Market on Twitter with Bitcoin]*.
 At a high level this is how it works:
 
-1. The first person *proposes* a bet by choosing an event to bet on (including the oracle to use) and value to risk.
+1. The first person, the *proposer*, *proposes* a bet by choosing an event to bet on (including the oracle to use) and value to risk.
    The proposal data also contains the inputs they will use to fund the bet. See [`gun bet propose`](./propose.md).
 2. Anyone who sees the proposal may make an *offer* in response by choosing how much they will risk in return and which outcome they want to bet on. See [`gun bet offer`](./offer.md).
    The offer is fully encrypted and can only be decrypted by the proposer.
-   In fact, it might not be an offer at all since you instead can use [`gun bet reply`](./reply.md) to send an encrypted message which will be indistinguishable from an encrypted offer.
+   In fact, it might not be an offer at all since you instead can use [`gun bet reply`](./reply.md) to send an encrypted message instead which will be indistinguishable from an encrypted offer.
 3. The proposer decrypts any offer they get and if they want to take the other side of the bet they broadcast the bet funding transaction.
    They may only choose one offer. See [`gun bet take`](./take.md).
+4. Both parties monitor the state of the bet by using [`gun -s bet list`](./list.md).
 4. When the oracle publishes the outcome the winning party gains ownership of the coins.
-   When they're ready they can move the coins into their main wallet. See [`gun bet claim`](./claim.md).
+   When they're ready they can move the coins into their main wallet with [`gun bet claim`](./claim.md).
    
+
 ## Oracles
 
 For this experiment I developed an oracle called [`olivia`](https://github.com/LLFourn/olivia) and deployed it at [h00.ooo](https://h00.ooo).
@@ -21,7 +23,7 @@ For this experiment I developed an oracle called [`olivia`](https://github.com/L
 
 To find events I developed a simple oracle explorer [outcome.observer](https://outcome.observer) which can browse the events of an oracle.
 
-## Protocol Details
+## Protocol Overview
 
 The proposal contains a public key which the offerer will use to encrypt their offer.
 The offer contains a public key followed by a ciphertext.
@@ -45,10 +47,14 @@ This way the publicly known values `P1` and `P2` are hidden.
 When winner learns the secret for `O1` or `O2` from the oracle they can claim the coins because they can construct the secret key for `P1 + O1 + R1` or `P2 + O2 + R2`.
 Note there is no real hurry for them to do so except that the coins can be [recovered from seed words](../backup-and-recovery.md) once they have been properly claimed.
 
-## Security
+## GuN Safety
 
-The main thing for things to go wrong here is for a malicious party to somehow cause a bet transaction to be confirmed *after* the event outcome is already known and has resulted in their favor.
-For example in a bet on a football match imagine if the proposer only takes the offer after the team they are betting on scores the first goal!
+Other than making the wrong bet here's the ways in which something could go wrong:
+
+### Late bets
+
+A malicious party may try to get a bet transaction to be confirmed *after* the event has already transpired and has resulted in their favor.
+For example, in a bet on a football match imagine if the proposer only takes the offer after the team they are betting has scored the first goal.
 The offerer must protect against this by canceling their offer before the game starts. See [`gun bet cancel`](./cancel.md).
 
 The proposer must be careful about taking offers with a low transaction fee.
@@ -56,9 +62,20 @@ If the transaction fee is low it may be stuck in the mempool until after the gam
 The offerer may then cheat by double spending his output if it looks like the game is going against him.
 Bet transactions enable *replace-by-fee* so either party can cancel it at this point by double spending one of their inputs (this is what [`gun bet cancel`](./cancel.md) does).
 
+### Oracle cheats
+
+The oracle may attest to the wrong outcome either maliciously or by accident.
+They may also do it publicly or covertly.
+There is nothing you can do about this other than call them out.
+Theoretically, you can also guarantee proof if the oracle misbehaved but this hasn't been implemented yet.
+
+### You won but lose your database
+
+see [backup and recovery](../backup-and-recovery.md).
+
 ## Privacy
 
-This protocol is trying to guarantee as much privacy as possible against an observer who sees the proposal, a list of offers and the blockchain.
+This protocol is tries to guarantee as much privacy as possible against an observer who sees the proposal, a list of offers and the blockchain.
 Such an observer will be able to figure out:
 
 1. What event the bet was on (they can see it in the proposal). This assumes the proposer is only using the input(s) for one bet but this might not be the case.
