@@ -12,7 +12,11 @@ gun tx <subcommand>
 
 For a transaction to be in the database it must spend to or from an address owned by this wallet.
 
-### `list`
+### list
+
+```
+gun tx list
+```
 
 Lists transactions associated with the wallet.
 This only keeps track of transactions that come in and out of the main wallet.
@@ -25,6 +29,10 @@ When you're waiting for a transaction to come in it can be handy to try:
 gun -s tx list
 ```
 
-### `show <txid>`
+### show
 
-Shows more details about a particular transaction.
+```
+gun tx show <txid>
+```
+
+Shows more details about a particular wallet transaction.

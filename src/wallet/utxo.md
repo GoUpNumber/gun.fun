@@ -16,16 +16,19 @@ gun utxo <subcommnd>
 At the moment a UTXO will no longer show up here if it has been spent by an unconfirmed transaction.
 It will show up if it is on a 
 
-### `list`
-
-List all your UTXOs.
+### list
 
 ```
 gun utxo list
 ```
 
+List all your UTXOs.
 
-### `show <utxo>`
+### show 
+
+```
+gun utxo show <outpoint>
+```
 
 Show more details about a UTXO.
 `<utxo>` is given in `txid:vout` format e.g

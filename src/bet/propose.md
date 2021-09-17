@@ -36,7 +36,7 @@ The command will output the proposal as a `#` delimited string with the binary d
 
 > ⚠️The binary data includes the on-chain input the proposer is using for the bet.
 > These are unencrypted and viewable by anyone.
-> Therefore, **if you are posting the proposal publicly you must first ask yourself whether you really want these on-chain inputs to be linked to the identity that posts the proposal**.
+> Therefore, if you are posting the proposal publicly **you must first ask yourself whether you really want these on-chain inputs to be linked to the identity that posts it**.
 
 ### Change
 
@@ -51,8 +51,6 @@ For technical reasons in the future change outputs for the proposer may be remov
 
 Add human readable tag to the bet as you create it.
 
-### `-y, --yes`
-
-Don't prompt me just answer "yes" to whatever questions are asked.
+{{#include ../yes_opt.md}}
 
 [base2048]: https://docs.rs/base2048

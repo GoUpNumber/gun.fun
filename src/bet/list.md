@@ -30,6 +30,7 @@ The list of bets has the following fields:
   - `lost`: You lost! You get nothing.
   - `claiming`: You've started claiming a won bet.
   - `claimed`: You've claimed the winnings successfully.
+  - `cancelling`: You've broadcast a transaction cancelling the bet.
   - `cancelled`: This bet was cancelled before confirming either (it could have been cancelled by you or your counterparty)
 - `outcome-time`: When the oracle expects the outcome to be known
 - `in`: the duration between now and `outcome-time` in short human readable form.

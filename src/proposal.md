@@ -1,2 +1,0 @@
-# Proposing a bet
-

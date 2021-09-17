@@ -36,7 +36,7 @@ Right now `p2wpkh` is the only option which means it uses [BIP84] derivation to 
 ### `blockchain`
 
 Configures the blockchain backend that the wallet will use.
-Only esplora style backends are supported (e.g. https://mempool.space and https://blockstream.info).
+Only esplora style backends are supported (e.g. [https://mempool.space/api] and [https://blockstream.info/api]).
 The only interesting option for non-developers at the moment is the `base_url` parameter which could be changed to your own [esplora backend] or another one you prefer.
 
 ### `keys`
@@ -55,3 +55,5 @@ gun -d ~/my_gun_dir init bitcoin
 
 [esplora backend]: https://github.com/Blockstream/electrs
 [BIP84]: https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki
+[https://blockstream.info/api]: https://blockstream.info/api
+[https://mempool.space/api]: https://mempool.space

@@ -3,10 +3,10 @@
 ## Future features
 
 1. Signed releases for every platform. [#29](https://github.com/LLFourn/gun/issues/29)
-2. Support for xpub wallet which produces PSBTs and can write them to SD cards for signing devices.
-3. Brain wallets.
+2. Connecting to esplora through Tor.
+3. Support for xpub wallet which produces PSBTs and can write them to SD cards for signing devices.
 4. lightning with [LDK](https://lightningdevkit.org/).
-5. A GUI with [tauri](https://github.com/tauri-apps/tauri) or something similar.
+6. A GUI with [tauri](https://github.com/tauri-apps/tauri) or something similar.
 
 
 ## Research Problems

@@ -5,13 +5,14 @@
 Binary releases should be available at [the repository](https://github.com/LLFourn/gun/releases) for each release for some architectures.
 I haven't figured out how I want to go about this yet so **it's better to just compile it yourself** for now.
 
-> 💡 The author of `gun` is the COVID QR code formally known as Lloyd "LLFourn" Fournier.
-> He resides (is imprisoned) in Australia and according to [new legislation] he could be forced against his will to help the prison guards get access to his online accounts including GitHub.
+> ⚠️ The author of `gun` is the COVID QR code formally known as Lloyd "LLFourn" Fournier.
+> He resides in Prison Island Australia and according to [new legislation] on the island he could be forced against his will to help the prison guards get access to his online accounts including GitHub.
 > From there they can "alter" data to "gather evidence".
-> Lloyd doesn't have to have done anything illegal for the takeover to be granted the target of the action can be anonymous or unknown.
-> Lloyd cannot disclose to anyone that this takeover has happened.
+> The takeover can be granted without Lloyd being suspected of doing anything illegal.
+> The target of the action can someone else unknown to him and can even be unknown to the guards.
 >
-> So please make sure you check the signatures and more importantly, prefer compiling the wallet yourself until he has figured out a more robust defense against this.
+> So please make sure you check the signatures and more importantly prefer compiling the wallet yourself until he has figured out a more robust defense against this.
+> Actions that publicly modify the code maliciously are far more obvious.
 
 ### Import author key
 Releases should be signed with [this public key](./llfourn-public-key.asc) with this fingerprint:
