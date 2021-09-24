@@ -30,8 +30,8 @@ The list of bets has the following fields:
   - `lost`: You lost! You get nothing.
   - `claiming`: You've started claiming a won bet.
   - `claimed`: You've claimed the winnings successfully.
-  - `cancelling`: You've broadcast a transaction cancelling the bet.
-  - `cancelled`: This bet was cancelled before confirming either (it could have been cancelled by you or your counterparty)
+  - `canceling`: You've broadcast a transaction canceling the bet.
+  - `canceled`: This bet was canceled before confirming either (it could have been canceled by you or your counterparty)
 - `outcome-time`: When the oracle expects the outcome to be known
 - `in`: the duration between now and `outcome-time` in short human readable form.
 - `risk`: How much BTC you stand to lose in this bet.

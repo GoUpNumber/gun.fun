@@ -8,7 +8,7 @@ But there are other more subtle and much less fun ways of losing your coins with
 
 A malicious party may try to get a bet transaction to be confirmed *after* the event has already transpired and has resulted in their favor.
 For example, in a bet on a football match imagine if the proposer only takes the offer after the team they are betting has scored the first goal.
-The offerer must protect against this by cancelling their offer before the game starts. See [`gun bet cancel`](./cancel.md).
+The offerer must protect against this by canceling their offer before the game starts. See [`gun bet cancel`](./cancel.md).
 
 The proposer must be careful about taking offers with a low transaction fee.
 If the transaction fee is low it may be stuck in the mempool until after the game starts.
