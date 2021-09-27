@@ -6,7 +6,7 @@ At a high level this is how it works:
 
 1. The first person, the *proposer*, *proposes* a bet by choosing an event to bet on (including the oracle to use) and value to risk.
    The proposal data also contains the inputs they will use to fund the bet. See [`gun bet propose`](./propose.md).
-2. Anyone who sees the proposal may make an *offer* in response by choosing how much they will risk in return and which outcome they want to bet on. See [`gun bet offer`](./offer.md).
+2. Anyone who sees the proposal may make an *offer* in response by choosing how much they will risk to gain the proposer's coins and which outcome they want to bet on. See [`gun bet offer`](./offer.md).
    The offer is fully encrypted and can only be decrypted by the proposer.
    In fact, it might not be an offer at all since you instead can use [`gun bet reply`](./reply.md) to send an encrypted message instead which will be indistinguishable from an encrypted offer.
 3. The proposer decrypts any offer they get and if they want to take the other side of the bet they broadcast the bet funding transaction.
