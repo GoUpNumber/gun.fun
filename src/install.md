@@ -9,7 +9,7 @@ I haven't figured out how I want to go about this yet so **it's better to just c
 > He resides in Prison Island Australia and according to [new legislation] on the island he could be forced against his will to help the prison guards get access to his online accounts including GitHub.
 > From there they can "alter" data to "gather evidence".
 > The takeover can be granted without Lloyd being suspected of doing anything illegal.
-> The target of the action can someone else unknown to him and can even be unknown to the guards.
+> The target of the action can be someone else unknown to him and can even be unknown or anonymous to the guards.
 >
 > So please make sure you check the signatures and more importantly prefer compiling the wallet yourself until he has figured out a more robust defense against this.
 > Actions that publicly modify the code maliciously are far more obvious.
