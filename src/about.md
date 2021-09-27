@@ -5,13 +5,14 @@ This is the user manual for *Go up Number!* — a command line Bitcoin wallet fo
 The main design goal of `gun` is for it to be *fun*!
 It might also be secure and stuff but we'll have to see.
 `gun` is **alpha quality** in all respects. 
+Thanks in advance for making the sacrifice of your time (and perhaps coins!) while testing this software.
 
 The defining feature of `gun` is the [`bet`](./bet/betting.md) command which lets you do peer-to-peer betting by copy-pasting gibberish.
 This is the only reason to use this wallet at the moment so you should only put what you need to play with (and are willing to lose).
 
 ## Architecture
 
-[`gun`] is written in rust and uses the [Bitcoin Dev Kit](https://bitcoindevkit.org/) to implement the underlying wallet functionality[^1].
+[`gun`] is written in rust and uses the [Bitcoin Dev Kit](https://bitcoindevkit.org/) (bdk) to implement the underlying wallet functionality[^1].
 It needs a trusted [esplora backend] server to provide blockchain data and by default it uses [mempool.space](https://mempool.space).
 `gun`'s strict dependence on esplora is its greatest weakness.
 
@@ -20,7 +21,7 @@ It needs a trusted [esplora backend] server to provide blockchain data and by de
 [`gun`] is open source.
 It relies on the community to report and (if they can) fix bugs.
 Bugs aren't fun so please report them on the [repository][`gun`].
-It'd also be helpful if you could improve this book whose repository is [here](https://github.com/LLFourn/gun.fun).
+You can improve [this book](https://github.com/LLFourn/gun.fun) too.
 
 [`gun`]: https://github.com/LLFourn/gun
 [esplora backend]: https://github.com/Blockstream/electrs
