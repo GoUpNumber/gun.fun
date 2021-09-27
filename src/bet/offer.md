@@ -42,7 +42,7 @@ You don't have to worry too much about this, if you put an incorrect value in `g
 
 After the proposer sees your offer they may take it at their own discretion.
 This includes taking the offer **after the outcome of the bet is already known** i.e. cheating.
-You must protect yourself against this by [cancelling](./cancel.md) the offer before a malicious proposer can take advantage of this.
+You must protect yourself against this by [canceling](./cancel.md) the offer before a malicious proposer can take advantage of this.
 
 
 ### Privacy

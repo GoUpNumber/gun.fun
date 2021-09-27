@@ -2,6 +2,7 @@
 
 - [About](./about.md)
 - [Installing](./install.md)
+  - [Upgrading](./upgrade.md)
 - [Setup](./setup.md)
   - [configuration](./config.md)
   - [backup and recovery](./backup-and-recovery.md)

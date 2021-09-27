@@ -13,7 +13,7 @@ Or you can bring your own [BIP39] seed words:
 ```
 gun init --from-existing ./my-seedwords.txt bitcoin
 ```
-Or to read from stdin
+Or read them from stdin
 ```
 gun init --from-existing - bitcoin
 ```
