@@ -24,8 +24,8 @@ Releases should be signed with [this public key](./llfourn-public-key.asc) with 
 To verify a binary's signature import <a href="https://twitter.com/LLFourn">@LLFourn's</a> key.
 
 ```
-curl -sL -o llfourn.asc https://gun.fun/llfourn.asc
-gpg --import llfourn.asc # check it has same fingerprint as above
+curl -sL https://gun.fun/llfourn.asc | gpg --import --import-options show
+# ⚠️ CHECK IT MATCHES THE FINGERPRINT ABOVE
 ```
 
 ### Download and verify 
