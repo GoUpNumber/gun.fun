@@ -2,7 +2,7 @@
 
 ## Binary Releases
     
-Binary releases should be available at [the repository](https://github.com/LLFourn/gun/releases) for each release for some architectures.
+Binary releases should be available at [the repository](https://github.com/LLFourn/gun/releases) for some architectures (right now only `linux-amd64`).
 I haven't figured out how I want to go about this yet so **it's better to just compile it yourself** for now.
 
 > ⚠️ The author of `gun` is the COVID QR code formally known as Lloyd "LLFourn" Fournier.
