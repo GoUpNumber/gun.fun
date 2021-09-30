@@ -21,7 +21,7 @@ gun init --from-existing - bitcoin
 Or run on a different network
 
 ```
-gun init tesetnet
+gun init testnet
 ```
 
 Right now `gun` stores a unencrypted [BIP39] seed phrase on your disk.
