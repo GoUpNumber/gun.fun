@@ -60,7 +60,7 @@ If you have a nightly toolchain you can install it faster and download/compile l
 cargo -Z avoid-dev-deps install --path .
 ```
 
-The *minimum supported rust version* for `gun` is `1.51`.
+The *minimum supported rust version* for `gun` is `1.54.0`.
 
 [new legislation]: https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r6623_aspassed/toc_pdf/20144b01.pdf;fileType=application%2Fpdf
 
