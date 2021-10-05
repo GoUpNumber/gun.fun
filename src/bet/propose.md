@@ -5,32 +5,24 @@ Propose an event to bet on and how much you are willing to risk.
 ## Synopsis 
 
 ```
-gun bet propose [options] <value> <event-url>
+gun bet propose [options] <event-url>
 ```
 
-Propose a bet where you risk 0.1 BTC on `/random/2021-08-11T04:29:00/heads_tails.winner` with oracle `h00.ooo`.
+For example
 
 ```
-gun bet propose 0.1BTC https://h00.ooo/random/2021-08-11T04:29:00/heads_tails.winner
-```
-
-Go all in!
-
-```
-gun bet propose all https://h00.ooo/random/2021-08-11T04:29:00/heads_tails.winner
+gun bet propose https://h00.ooo/random/2021-11-01T00:00:00/heads_tails.winner
 ```
 
 ## Description
 
-`gun` bets start with a proposal which set the oracle, event and value the *proposer* will to risk on the bet.
+`gun` bets start with a proposal which set the oracle, event and value the *proposer* will risk on the bet.
 
 The oracle and the event are embedded in the `<event-url>` like `https://h00.ooo/random/2021-08-11T04:29:00/heads_tails.winner`.
 Right now only `https` URLs are supported.
 The oracle for the bet is the host of the URL e.g. `h00.ooo`.
 In order to discover an oracle and event to bet on you can use an oracle explorer like [outcome.observer](https://outcome.observer).
 Note carefully that **you can only bet on events with two outcomes**.
-
-`<value>` can either a specific quantity of Bitcoin with denomination or `all` to bet all available coins in the wallet.
 
 The command will output the proposal as a `#` delimited string with the binary data encoded with [base2048].
 
@@ -46,6 +38,12 @@ It is a good idea to use [`gun split`](../wallet/split.md) to create an output w
 For technical reasons in the future change outputs for the proposer may be removed so you should get used to doing this now!
 
 ## Options
+
+### `-v, --value <value>`
+
+The value you want to risk on the bet.
+If you don't provide it you'll be prompted for it.
+Can be `all` to go "all in" with the coins in your wallet, otherwise an amount and denomination like `0.01BTC` or `10000sat`.
 
 ### `-t, --tags <tags>...`
 
