@@ -33,8 +33,8 @@ curl -sL https://gun.fun/llfourn.asc | gpg --import --import-options show
 Download the binary and signature and verify like so:
 
 ```
-curl -sL -o gun https://github.com/LLFourn/gun/releases/download/v0.3.0/gun-linux-amd64
-curl -sL -o gun.asc https://github.com/LLFourn/gun/releases/download/v0.3.0/gun-linux-amd64.asc
+curl -sL -o gun https://github.com/LLFourn/gun/releases/download/v0.4.0/gun-linux-amd64
+curl -sL -o gun.asc https://github.com/LLFourn/gun/releases/download/v0.4.0/gun-linux-amd64.asc
 gpg --verify gun.asc # check it verifies against the key with fingerprint above
 chmod u+x gun
 ./gun --help
