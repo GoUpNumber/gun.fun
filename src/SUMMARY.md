@@ -16,6 +16,7 @@
     - [utxo](./wallet/utxo.md)
 - [Betting](./bet/betting.md)
   - [technical overview](./bet/protocol-overview.md)
+  - [privacy](./bet/privacy.md)
   - [oracles](./bet/oracles.md)
   - [GuN safety](./bet/gun-safety.md)
   - [commands]()
