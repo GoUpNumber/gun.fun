@@ -51,7 +51,7 @@ A proposal looks like this:
 It contains several parts split up by the `#` character. 
 
 1. `0.005`:  The amount in BTC that is being risked.
-2. `h00.ooo`: The oracle, in this case https://h00.ooo
+2. `h00.ooo`: The oracle in this case is [h00.ooo](https://h00.ooo).
 3. `/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win`: The event the proposal is for. 
    This can be read as "Whether Manchester United beats Leicester City in their EPL (English Premier League) match on 2021-10-16".
    Note that `gun` can only bet on events with two possible outcomes.
