@@ -31,5 +31,6 @@
     - [forget](./bet/forget.md)
     - [cancel](./bet/cancel.md)
     - [tag](./bet/tag.md)
+  - [offer tutorial](./bet/offer-tutorial.md)
 - [Formatting Output](./formatting-output.md)
 - [Roadmap](./roadmap.md)
