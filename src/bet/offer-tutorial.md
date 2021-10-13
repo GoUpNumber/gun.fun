@@ -92,8 +92,8 @@ You'll be prompted to choose:
    You can bet as low as 1000 sats to give yourself 1 to 500 risk reward ratio. 
    [@GoUpNumber] will always take it if they don't get any better offers.
 
-The [base2048] gibberish you get as output is encrypted so that only the propser can read it.
-Copy it and paste it somewhere the proposer can see it e.g. reply to the tweet, DM them etc.
+The [base2048] gibberish you get as output is encrypted so that only the proposer can read it.
+Copy it and paste it somewhere the proposer can see it e.g. reply to the tweet, send them a direct message etc.
 
 > 💡 Consider posting the offer under a colorful pseudonym so not even the proposer knows who they're betting with!
 
@@ -144,7 +144,7 @@ There is no strict time limit to claiming won bets but if you have data loss whi
 
 If you're stuck in confirmed long after the event was due the oracle may have messed up.
 The easiest way is to find the event on [outcome.observer] but you can also manually visit the URL. 
-For example go to [https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win](https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win) in your browser and see if the attestion field is filled in.
+For example go to [https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win](https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win) in your browser and see if the `attestation` field is filled in.
 
 > ⚠️ In the current protocol, if the oracle disappears of fails to ever attest to the event you have both lost your coins.
 > The oracle `h00.ooo` is run by [LLFourn](https://github.com/LLFourn) so in this case you can blame him for that!

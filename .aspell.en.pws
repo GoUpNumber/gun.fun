@@ -1,4 +1,4 @@
-personal_ws-1.1 en 49 
+personal_ws-1.1 en 50 
 BIP
 BTC
 COVID
@@ -21,6 +21,7 @@ backend
 backends
 bdk
 blockchain
+broadcasted
 canceled
 ciphertext
 counterparty
