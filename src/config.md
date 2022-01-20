@@ -2,18 +2,20 @@
 
 The main configuration file is in `~/.gun/config.json` and looks something like this:
 
-```json 
+```json
 {
+  "version": "1",
   "network": "bitcoin",
+  "psbt-output-dir": "/home/user/psbts",
   "blockchain": {
     "type": "esplora",
     "base_url": "https://mempool.space/api",
-    "concurrency": 4,
-    "stop_gap": 10,
-    "kind" : "mempool"
+    "concurrency": 10,
+    "stop_gap": 10
   },
-  "kind": "p2wpkh",
-  "keys": "seed-words-file"
+  "wallet-key": {
+    "kind": "seed-words-file"
+  }
 }
 ```
 
@@ -28,10 +30,9 @@ Which network the wallet operates on:
 - `regtest`: A local regtest node.
 - `signet`: A *signet* testnet (not supported yet: [issue#21](https://github.com/LLFourn/gun/issues/21)).
 
-### `kind`
+### `psbt-output-dir`
 
-This indicates the kind of wallet it is. 
-Right now `p2wpkh` is the only option which means it uses [BIP84] derivation to get `p2wpkh` addresses.
+If gun does not have access to private keys for signing transactions, then unsigned PSBTs will be saved to this directory. Users will then manually sign these transactions and save them back to this directory where they will be loaded for broadcasting.
 
 ### `blockchain`
 
@@ -39,9 +40,9 @@ Configures the blockchain backend that the wallet will use.
 Only esplora style backends are supported (e.g. [https://mempool.space/api] and [https://blockstream.info/api]).
 The only interesting option for non-developers at the moment is the `base_url` parameter which could be changed to your own [esplora backend] or another one you prefer.
 
-### `keys`
+### `wallet-key`
 
-Indicates where keys are derived from. Right now the only option is `seed-words-file`.
+Indicates what `kind` of wallet gun is using and where keys are derived from. `kind` can be a `seed-words-file` or a `descriptor` based wallet. Descriptor based configurations will include the `internal` and `external` wallet descriptors.
 
 ## `GUN_DIR`
 
