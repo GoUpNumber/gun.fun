@@ -29,8 +29,8 @@ The wallet remembers that it has given out this address in the database.
 gun address last-unused
 ```
 
-Gets an address that hasn't been used yet.
-If they've all been used so far it gets a new one.
+Gets a new address if it hasn't been used yet.
+Otherwise outputs a fresh address.
 
 ### list
 
@@ -39,6 +39,12 @@ gun address list
 ```
 
 List all addresses given out by this wallet.
+By default this only shows `external` addresses i.e. addresses produced by `gun address new`.
+
+Options:
+
+- `-a, --all`: Show all addresses (internal & external)
+- `-i, --internal`: Show only internal addresses
 
 ### show
 

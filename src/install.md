@@ -1,7 +1,7 @@
 # Install
 
 ## Binary Releases
-    
+
 Binary releases should be available at [the repository](https://github.com/LLFourn/gun/releases) for some architectures (right now only `linux-amd64`).
 I haven't figured out how I want to go about this yet so **it's better to just compile it yourself** for now.
 
@@ -28,7 +28,7 @@ curl -sL https://gun.fun/llfourn.asc | gpg --import --import-options show
 # ⚠️ CHECK IT MATCHES THE FINGERPRINT ABOVE
 ```
 
-### Download and verify 
+### Download and verify
 
 Download the binary and signature and verify like so:
 
@@ -42,7 +42,7 @@ chmod u+x gun
 
 ...verifying this is *not fun* so hopefully we'll figure out a way to do updating `gun` without doing this every time.
 
-## Compile yourself 
+## Compile yourself
 
 Before compiling `gun` you need to [install rust](https://www.rust-lang.org/tools/install) and cargo.
 Then,
@@ -60,7 +60,7 @@ If you have a nightly toolchain you can install it faster and download/compile l
 cargo -Z avoid-dev-deps install --path .
 ```
 
-The *minimum supported rust version* for `gun` is `1.54.0`.
+The *minimum supported rust version* for `gun` is `1.58.0`.
 
 [new legislation]: https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r6623_aspassed/toc_pdf/20144b01.pdf;fileType=application%2Fpdf
 

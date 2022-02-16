@@ -1,4 +1,6 @@
-# Go Up Number!
+# Go Up Number! <iframe src="https://ghbtns.com/github-btn.html?user=llfourn&repo=gun&type=star&count=true&size=large" style="float: right;" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+
+
 
 This is the user manual for *Go up Number!* — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.
 
@@ -14,7 +16,7 @@ This is the only reason to use this wallet at the moment so you should only put 
 
 [`gun`] is written in rust and uses the [Bitcoin Dev Kit](https://bitcoindevkit.org/) (bdk) to implement the underlying wallet functionality[^1].
 It needs a trusted [esplora backend] server to provide blockchain data and by default it uses [mempool.space](https://mempool.space).
-`gun`'s strict dependence on esplora is its greatest weakness.
+
 
 ## Contributing
 

@@ -1,13 +1,16 @@
 # Roadmap
 
-## Future features
+## Features
 
-1. Signed releases for every platform. [#29](https://github.com/LLFourn/gun/issues/29)
-2. Connecting to esplora through Tor.
-3. Support for xpub wallet which produces PSBTs and can write them to SD cards for signing devices.
-4. lightning with [LDK](https://lightningdevkit.org/).
-6. A GUI with [tauri](https://github.com/tauri-apps/tauri) or something similar.
-
+1. [x] Support for xpub wallet which produces PSBTs and can write them to SD cards for signing devices. (done in v0.6)
+2. [ ] Taproot support.
+3. [ ] Threshold signing with [FORST](https://eprint.iacr.org/2020/852.pdf).
+4. [ ] Signed releases for every platform. [#29](https://github.com/LLFourn/gun/issues/29)
+5. [ ] signet betitng protocol with `OP_CTV`
+6. [ ] Connecting to esplora through Tor.
+7. [ ] lightning with [LDK](https://lightningdevkit.org/).
+8. [ ] A GUI with [tauri](https://github.com/tauri-apps/tauri) or something similar.
+9. [ ] WASM plugin system
 
 ## Research Problems
 
