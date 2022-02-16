@@ -81,10 +81,10 @@ gun setup xkey "[E83E2DB9/84'/0'/0']xpub66..mSXJj"
 The descriptor is in the form `[master-fingerprint/derivation'/path']xkey`.
 `gun` will derive `p2wpkh` external keys at `xkey/0/*` and internal keys at `xkey/1/*` as is done in BIP84, BIP86 etc.
 
-If you initialise it with an `xpriv` you will be able to sign transactions.
+If you initialize it with an `xpriv` you will be able to sign transactions.
 The `xpriv` itself will be stored unencrypted in the database.
 
-If you initialise with an `xpub` it will be watch-only until you also add a signer with [`gun config signer`](./config.md).
+If you initialize with an `xpub` it will be watch-only until you also add a signer with [`gun config signer`](./config.md).
 
 ### `descriptor <external> [internal]`
 

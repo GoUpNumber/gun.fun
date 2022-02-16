@@ -4,9 +4,9 @@
 
 1. [x] Support for xpub wallet which produces PSBTs and can write them to SD cards for signing devices. (done in v0.6)
 2. [ ] Taproot support.
-3. [ ] Threshold signing with [FORST](https://eprint.iacr.org/2020/852.pdf).
+3. [ ] Threshold signing with [FROST](https://eprint.iacr.org/2020/852.pdf).
 4. [ ] Signed releases for every platform. [#29](https://github.com/LLFourn/gun/issues/29)
-5. [ ] signet betitng protocol with `OP_CTV`
+5. [ ] signet betting protocol with `OP_CTV`
 6. [ ] Connecting to esplora through Tor.
 7. [ ] lightning with [LDK](https://lightningdevkit.org/).
 8. [ ] A GUI with [tauri](https://github.com/tauri-apps/tauri) or something similar.

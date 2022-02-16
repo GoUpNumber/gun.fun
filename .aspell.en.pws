@@ -1,8 +1,9 @@
-personal_ws-1.1 en 55 
+personal_ws-1.1 en 63
 BIP
 BTC
 COVID
-Coldcard
+ColdCard
+Config
 DMs
 Dev
 Diffie
@@ -19,6 +20,7 @@ Roadmap
 Subcommands
 UTXO
 UTXOs
+WASM
 XPub
 backend
 backends
@@ -27,6 +29,7 @@ blockchain
 broadcasted
 canceled
 ciphertext
+config
 counterparty
 cryptographic
 decrypt
@@ -38,13 +41,18 @@ gapped
 llfourn
 mainnet
 mempool
+miniscript
+multisigs
 offerer
 ooo
+plaintext
+pre
 regtest
 repo
 roadmap
 sats
 stdin
+subcommand
 subpaths
 tauri
 testnet

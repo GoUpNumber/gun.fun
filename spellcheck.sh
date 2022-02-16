@@ -8,7 +8,7 @@ files=${@:-$(find . -name '*.md')}
 
 
 for file in $files; do
-    output=$(aspell --personal ./.aspell.en.pws list -M < "$file");
+    output=$(aspell --master=en_US --personal ./.aspell.en.pws list -M < "$file");
     if test "$output"; then
         echo "There is problems in $file:" >&2;
         echo "$output" >&2;
