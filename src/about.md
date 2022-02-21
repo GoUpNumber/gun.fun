@@ -16,20 +16,21 @@ This is the only reason to use this wallet at the moment so you should only put 
 <big>
 
 - ✅ Peer-to-peer [betting](./betting/bet.md)
-- ✅ Easily setup with [ColdCard](./setup/setup.md)
+- ✅ Easily setup with [ColdCard](./setup/setup.md#coldcard-path-to-sd-card)
 - ✅ PSBT & Descriptor based wallet
-- ✅ BIP39 seedwords (incl. [passphrase](./setup/setup.md) support)
+- ✅ BIP39 seedwords (incl. [passphrase](https://gun.fun/setup/setup.html#seed) support)
 - ✅ Different [output formats](./formatting-output.md) for writing tools against (JSON, tabs)
 - ✅ Easy to run inside VM or docker container
 - ☐ Single signer Taproot [BIP86](https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki) signing (in progress 👷)
 - ☐ Threshold Multisig Schnorr signatures i.e. [FROST](https://eprint.iacr.org/2020/852.pdf)  (in research 🧪)
-- ☐ Make requests through Tor with [`arti`](https://gitlab.torproject.org/tpo/core/arti)
+- ☐ Make all HTTP requests through Tor with [`arti`](https://gitlab.torproject.org/tpo/core/arti)
 - ☐ Peer-to-Peer betting protocol using Taproot
-- ☐ Improved `OP_CTV` betting
+- ☐ Lightning payments with LDK
+- ☐ Demo of improved `OP_CTV` betting [mailing list post](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-January/019808.html) on signet.
+- ☐ Coin selection [issue#86](https://github.com/LLFourn/gun/issues/86)
 - ☐ Fee bumping
 - ☐ WASM plugins/apps with [`wasmer`](https://crates.io/crates/wasmer/)
 - ☐ A user interface that is graphical
-- ☐ Lightning payments with LDK
 
 </big>
 
