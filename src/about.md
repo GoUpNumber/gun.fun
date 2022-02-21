@@ -6,7 +6,7 @@ This is the user manual for *Go up Number!* — a command line Bitcoin wallet fo
 
 The main design goal of `gun` is for it to be *fun*!
 It might also be secure and stuff but we'll have to see.
-`gun` is **alpha quality** in all respects. 
+`gun` is **beta quality** in all respects. 
 Thanks in advance for making the sacrifice of your time (and perhaps coins!) while testing this software.
 
 The defining feature of `gun` is the [`bet`](./bet/betting.md) command which lets you do peer-to-peer betting by copy-pasting gibberish.
