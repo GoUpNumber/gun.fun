@@ -23,11 +23,11 @@ This is the only reason to use this wallet at the moment so you should only put 
 - ✅ Easy to run inside VM or docker container
 - ☐ Single signer Taproot [BIP86](https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki) signing (in progress 👷)
 - ☐ Threshold Multisig Schnorr signatures i.e. [FROST](https://eprint.iacr.org/2020/852.pdf)  (in research 🧪)
-- ☐ Make requests through Tor with [arti](https://gitlab.torproject.org/tpo/core/arti)
+- ☐ Make requests through Tor with [`arti`](https://gitlab.torproject.org/tpo/core/arti)
 - ☐ Peer-to-Peer betting protocol using Taproot
 - ☐ Improved `OP_CTV` betting
 - ☐ Fee bumping
-- ☐ WASM plugins/apps with [wasmer](https://crates.io/crates/wasmer/)
+- ☐ WASM plugins/apps with [`wasmer`](https://crates.io/crates/wasmer/)
 - ☐ A user interface that is graphical
 - ☐ Lightning payments with LDK
 
