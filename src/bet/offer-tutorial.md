@@ -150,7 +150,7 @@ For example go to [https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win](ht
 
 ### The Oracle has attested to the wrong thing
 
-All you can do is publicaly shame the operator of the oracle.
+All you can do is publicly shame the operator of the oracle.
 
 ### Something else
 

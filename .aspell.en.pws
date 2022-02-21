@@ -1,7 +1,8 @@
-personal_ws-1.1 en 63
+personal_ws-1.1 en 68 
 BIP
 BTC
 COVID
+CTV
 ColdCard
 Config
 DMs
@@ -14,12 +15,15 @@ JSON
 LDK
 LLFourn
 LLFourn's
+Multisig
 PSBT
 PSBTs
 Roadmap
+Schnorr
 Subcommands
 UTXO
 UTXOs
+VM
 WASM
 XPub
 backend
@@ -51,6 +55,7 @@ regtest
 repo
 roadmap
 sats
+seedwords
 stdin
 subcommand
 subpaths

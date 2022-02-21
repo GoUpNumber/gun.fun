@@ -19,7 +19,6 @@
     - [tx](./wallet/tx.md)
     - [utxo](./wallet/utxo.md)
 - [Betting](./bet/betting.md)
-  - [technical overview](./bet/protocol-overview.md)
   - [privacy](./bet/privacy.md)
   - [oracles](./bet/oracles.md)
   - [GuN safety](./bet/gun-safety.md)
@@ -36,5 +35,7 @@
     - [cancel](./bet/cancel.md)
     - [tag](./bet/tag.md)
   - [offer tutorial](./bet/offer-tutorial.md)
+  - [technical overview](./bet/protocol-overview.md)
+
 - [Formatting Output](./formatting-output.md)
 - [Roadmap](./roadmap.md)
