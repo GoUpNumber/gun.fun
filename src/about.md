@@ -14,6 +14,7 @@ This is the only reason to use this wallet at the moment so you should only put 
 ## Features
 
 <big>
+
 - ✅ Peer-to-peer [betting](./betting/bet.md)
 - ✅ Easily setup with [ColdCard](./setup/setup.md)
 - ✅ PSBT & Descriptor based wallet
@@ -29,6 +30,7 @@ This is the only reason to use this wallet at the moment so you should only put 
 - ☐ WASM plugins/apps with [wasmer](https://crates.io/crates/wasmer/)
 - ☐ A user interface that is graphical
 - ☐ Lightning payments with LDK
+
 </big>
 
 ## Architecture
