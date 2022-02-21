@@ -17,7 +17,7 @@ You should meet the following criteria:
 1. Comfortable with command line applications.
 2. Don't mind losing coins due to bad bets or technical malfunctions. You are happy to consider it a donation to science.
 3. Able to report bugs on GitHub.
-  
+
 ## Install
 
 Follow instructions in [install](../install.md).
@@ -52,11 +52,11 @@ A proposal looks like this:
 0.005#h00.ooo#/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win#ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ
 ```
 
-It contains several parts split up by the `#` character. 
+It contains several parts split up by the `#` character.
 
 1. `0.005`:  The amount in BTC that is being risked.
 2. `h00.ooo`: The oracle in this case is [h00.ooo](https://h00.ooo).
-3. `/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win`: The event the proposal is on. 
+3. `/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win`: The event the proposal is on.
    This can be read as "Whether Manchester United beats Leicester City in their EPL (English Premier League) match on 2021-10-16".
    Note that `gun` can only bet on events with two possible outcomes.
 4. `ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ`: cryptographic input to the bet. A public key and list of inputs.
@@ -89,7 +89,7 @@ You'll be prompted to choose:
 
 1. Which outcome you want to bet on. In this case `true` if you think Manchester United will win otherwise `false`.
 2. How much you want to risk to get the 500,000 sats on offer in the proposal.
-   You can bet as low as 1000 sats to give yourself 1 to 500 risk reward ratio. 
+   You can bet as low as 1000 sats to give yourself 1 to 500 risk reward ratio.
    [@GoUpNumber] will always take it if they don't get any better offers.
 
 The [base2048] gibberish you get as output is encrypted so that only the proposer can read it.
@@ -102,8 +102,7 @@ Copy it and paste it somewhere the proposer can see it e.g. reply to the tweet, 
 As the offerer you choose the fee that the bet transaction will pay.
 The default fee `gun` chooses is quite high (it attempts to get it into the next block i.e. `--fee in-blocks:1`).
 This is inappropriate for most offers unless they are being made last minute.
-You can use `--fee` to set the fee so it should confirm some time in the next 30 blocks after it is broadcasted at the current fee rate.
-If you're making the offer days before the event then this is fine.
+For example if you are betting on match being played a week from now use something like `--fee in-blocks:30` so that it should confirm some time in the next 30 blocks after the proposer broadcasts it at the current fee rate.
 
 ```
 gun bet offer --fee in-blocks:30 0.005#h00.ooo#/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win#ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ
@@ -117,7 +116,7 @@ The easiest way to monitor the offer is to do:
 gun -s bet list
 ```
 
-Immediately after it will be in the `offered` state.
+Immediately after you've made the offer it will be in the `offered` state.
 When/if the proposer has taken your offer it will transition to the `unconfirmed` state and then eventually the `confirmed` state when it ends up in the chain.
 If the proposer chooses a different offer it will end up in the `canceled` state (or if you use [`gun bet cancel`](./cancel.md) to cancel it).
 
@@ -151,7 +150,7 @@ For example go to [https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win](ht
 
 ### The Oracle has attested to the wrong thing
 
-Publicly shame the operator of the oracle.
+All you can do is publicaly shame the operator of the oracle.
 
 ### Something else
 
