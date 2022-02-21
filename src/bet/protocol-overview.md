@@ -1,5 +1,8 @@
 # Bet Protocol Technical Overview
 
+> 💡 You don't have to read this.
+> This is only for people who are interested in how the betting protocol actually works.
+
 The protocol takes two messages and one on-chain transaction.
 
 The first message, the "proposal", contains a public key (`P1`) which the second message, the "offer", will be encrypted under.

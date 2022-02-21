@@ -16,7 +16,7 @@ gun send [OPTIONS] <value> <to>
 send 0.1 BTC to an address:
 
 ```
-gun send 0.1BTC bc1qhg0xqvrg50x50qnjqgfaa8jlle8uz7q3l2c5ud 
+gun send 0.1BTC bc1qhg0xqvrg50x50qnjqgfaa8jlle8uz7q3l2c5ud
 ```
 
 Same as the above but with different denomination:

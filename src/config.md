@@ -2,18 +2,21 @@
 
 The main configuration file is in `~/.gun/config.json` and looks something like this:
 
-```json 
+```json
 {
-  "network": "bitcoin",
+  "version": "1",
+  "network": "signet",
   "blockchain": {
     "type": "esplora",
-    "base_url": "https://mempool.space/api",
-    "concurrency": 4,
-    "stop_gap": 10,
-    "kind" : "mempool"
+    "base_url": "https://mempool.space/signet/api",
+    "concurrency": 10,
+    "stop_gap": 10
   },
-  "kind": "p2wpkh",
-  "keys": "seed-words-file"
+  "signers": [
+    {
+      "kind": "seed-words-file",
+    }
+  ]
 }
 ```
 
@@ -26,32 +29,30 @@ Which network the wallet operates on:
 - `bitcoin`: The bitcoin  Bitcoin.
 - `testnet`: the Bitcoin testnet.
 - `regtest`: A local regtest node.
-- `signet`: A *signet* testnet (not supported yet: [issue#21](https://github.com/LLFourn/gun/issues/21)).
-
-### `kind`
-
-This indicates the kind of wallet it is. 
-Right now `p2wpkh` is the only option which means it uses [BIP84] derivation to get `p2wpkh` addresses.
+- `signet`: The *signet* testnet
 
 ### `blockchain`
 
 Configures the blockchain backend that the wallet will use.
-Only esplora style backends are supported (e.g. [https://mempool.space/api] and [https://blockstream.info/api]).
-The only interesting option for non-developers at the moment is the `base_url` parameter which could be changed to your own [esplora backend] or another one you prefer.
 
-### `keys`
+At the moment only esplora style backends are supported (e.g. [https://mempool.space/api] and [https://blockstream.info/api]).
 
-Indicates where keys are derived from. Right now the only option is `seed-words-file`.
+#### `base_url`
 
-## `GUN_DIR`
+Sets the esplora HTTP API backend to make requests to
 
-You can override the default directory `~/.gun` that `gun` uses to find its configuration with the `GUN_DIR` environment variable or by using the `-d` top level option:
+#### `concurrency`
 
-```sh
-GUN_DIR=~/my_gun_dir gun init bitcoin
-# does the same thing as
-gun -d ~/my_gun_dir init bitcoin
-```
+How many requests to make in parallel to the esplora backend.
+
+#### `stop_gap`
+
+How many unused addresses should `gun` wait to find until it stops scanning more when syncing.
+
+### `signers`
+
+signers is an array of signing methods that will be used to sign transactions.
+Most of the time this will have a single entry.
 
 [esplora backend]: https://github.com/Blockstream/electrs
 [BIP84]: https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki

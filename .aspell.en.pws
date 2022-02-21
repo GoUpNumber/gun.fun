@@ -1,7 +1,10 @@
-personal_ws-1.1 en 50 
+personal_ws-1.1 en 68 
 BIP
 BTC
 COVID
+CTV
+ColdCard
+Config
 DMs
 Dev
 Diffie
@@ -12,11 +15,17 @@ JSON
 LDK
 LLFourn
 LLFourn's
+Multisig
+PSBT
 PSBTs
 Roadmap
+Schnorr
 Subcommands
 UTXO
 UTXOs
+VM
+WASM
+XPub
 backend
 backends
 bdk
@@ -24,6 +33,7 @@ blockchain
 broadcasted
 canceled
 ciphertext
+config
 counterparty
 cryptographic
 decrypt
@@ -31,16 +41,24 @@ decrypted
 decrypts
 esplora
 feerate
+gapped
 llfourn
 mainnet
 mempool
+miniscript
+multisigs
 offerer
 ooo
+plaintext
+pre
 regtest
 repo
 roadmap
 sats
+seedwords
 stdin
+subcommand
+subpaths
 tauri
 testnet
 toolchain

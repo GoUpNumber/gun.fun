@@ -5,7 +5,7 @@ This is useful when you want to have evenly sized outputs for making [bet propos
 
 
 ```
-gun split [OPTIONS] <output-size> [n]
+gun split [OPTIONS] <output-size> <n>
 ```
 
 ## Synopsis
@@ -14,11 +14,6 @@ Create 5 outputs of 0.05 BTC each.
 
 ```
 gun split 0.05BTC 5
-```
-Create as many 0.05 BTC outputs as possible with all the funds in the wallet.
-
-```
-gun split 0.05BTC
 ```
 
 ## Options

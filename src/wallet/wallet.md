@@ -10,4 +10,3 @@ Here are the commands:
 - [`gun tx`](./tx.md) view transactions made by this wallet.
 - [`gun utxo`](./utxo.md) view UTXOs owned by this wallet.
 
-
