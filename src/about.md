@@ -44,8 +44,17 @@ It needs a trusted [esplora backend] server to provide blockchain data and by de
 [`gun`] is open source.
 It relies on the community to report and (if they can) fix bugs.
 Bugs aren't fun so please report them on the [repository][`gun`].
-You can improve [this book](https://github.com/LLFourn/gun.fun) too.
+Please help improve [this book](https://github.com/LLFourn/gun.fun) too.
 
 [`gun`]: https://github.com/LLFourn/gun
 [esplora backend]: https://github.com/Blockstream/electrs
 [^1]: Right now it uses a branch of bdk at [llfourn/bdk](https://github.com/llfourn/bdk/tree/gun).
+
+## Community
+
+<big>
+
+Join us on [Discord](https://discord.gg/Wknb2A6J)
+
+</big>
+
