@@ -2,7 +2,7 @@
 
 ## Binary Releases
 
-Binary releases should be available at [the repository](https://github.com/LLFourn/gun/releases) for some architectures (right now only `linux-amd64`).
+Binary releases should be available at [the repository](https://github.com/GoUpNumber/gun/releases) for some architectures (right now only `linux-amd64`).
 I haven't figured out how I want to go about this yet so **it's better to just compile it yourself** for now.
 
 > ⚠️ The author of `gun` is the COVID QR code formally known as Lloyd "LLFourn" Fournier.
@@ -33,8 +33,8 @@ curl -sL https://gun.fun/llfourn.asc | gpg --import --import-options show
 Download the binary and signature and verify like so:
 
 ```
-curl -sL -o gun https://github.com/LLFourn/gun/releases/download/v0.6.0/gun-linux-amd64
-curl -sL -o gun.asc https://github.com/LLFourn/gun/releases/download/v0.6.0/gun-linux-amd64.asc
+curl -sL -o gun https://github.com/GoUpNumber/gun/releases/download/v0.6.0/gun-linux-amd64
+curl -sL -o gun.asc https://github.com/GoUpNumber/gun/releases/download/v0.6.0/gun-linux-amd64.asc
 gpg --verify gun.asc # check it verifies against the key with fingerprint above
 chmod u+x gun
 ./gun --help
@@ -48,7 +48,7 @@ Before compiling `gun` you need to [install rust](https://www.rust-lang.org/tool
 Then,
 
 ```
-git clone https://github.com/LLFourn/gun
+git clone https://github.com/GoUpNumber/gun
 cd gun
 cargo install --path .
 # Make sure ~/.cargo/bin is in your $PATH

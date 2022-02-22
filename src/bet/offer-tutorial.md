@@ -154,7 +154,7 @@ All you can do is publicly shame the operator of the oracle.
 
 ### Something else
 
-Report this as a bug on [GitHub](https://github.com/LLFourn/gun) or contact LLFourn in some other way.
+Report this as a bug on [GitHub](https://github.com/GoUpNumber/gun) or contact LLFourn in some other way.
 
 [@GoUpNumber]: https://twitter.com/GoUpNumber
 [base2048]: https://docs.rs/base2048

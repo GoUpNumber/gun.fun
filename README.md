@@ -1,6 +1,6 @@
 # [gun.fun](https://gun.fun)
 
-The source files for [gun.fun](https://gun.fun) -- the documentation for the Go Up Number wallet ([`gun`](https://github.com/llfourn/gun)).
+The source files for [gun.fun](https://gun.fun) -- the documentation for the Go Up Number wallet ([`gun`](https://github.com/GoUpNumber/gun)).
 
 Please contribute.
 

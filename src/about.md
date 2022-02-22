@@ -27,7 +27,7 @@ Remember to only put in what you are willing to lose!
 - ☐ Peer-to-Peer betting protocol using Taproot
 - ☐ Lightning payments with LDK
 - ☐ Demo of improved `OP_CTV` betting [mailing list post](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-January/019808.html) on signet.
-- ☐ Coin selection [issue#86](https://github.com/LLFourn/gun/issues/86)
+- ☐ Coin selection [issue#86](https://github.com/GoUpNumber/gun/issues/86)
 - ☐ Fee bumping
 - ☐ WASM plugins/apps with [`wasmer`](https://crates.io/crates/wasmer/)
 - ☐ A user interface that is graphical
@@ -44,9 +44,9 @@ It needs a trusted [esplora backend] server to provide blockchain data and by de
 [`gun`] is open source.
 It relies on the community to report and (if they can) fix bugs.
 Bugs aren't fun so please report them on the [repository][`gun`].
-Please help improve [this book](https://github.com/LLFourn/gun.fun) too.
+Please help improve [this book](https://github.com/GoUpNumber/gun.fun) too.
 
-[`gun`]: https://github.com/LLFourn/gun
+[`gun`]: https://github.com/GoUpNumber/gun
 [esplora backend]: https://github.com/Blockstream/electrs
 [^1]: Right now it uses a branch of bdk at [llfourn/bdk](https://github.com/llfourn/bdk/tree/gun).
 
