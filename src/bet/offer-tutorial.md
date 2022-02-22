@@ -20,8 +20,13 @@ You should meet the following criteria:
 
 ## Install
 
-Follow instructions in [install](../install.md).
-Remember to back up your seed words in `$HOME/.gun/seed.txt`.
+Follow instructions in [install](../install.md) and [setup](../setup/setup.md).
+
+The simplest setup you can do is just running:
+
+```
+gun setup seed
+```
 
 ## Put some coins in your wallet
 
