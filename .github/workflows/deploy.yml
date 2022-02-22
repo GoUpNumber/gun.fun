@@ -31,5 +31,5 @@ jobs:
           rm -rf *
           mv ../book/html .
           git add .
-          git commit -m "Deploy $GITHUB_SHA" to gh-pages
+          git commit -m "Deploy $GITHUB_SHA to gh-pages"
           git push --force
