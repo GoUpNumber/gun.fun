@@ -2,14 +2,14 @@
 
 This is the user manual for *Go up Number!* — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.
 
-It's the world's most fully featured stand alone command line bitcoin wallet.
+`gun` is the world's most fully featured stand alone command line bitcoin wallet.
 The main design goal of `gun` is for it to be *fun*!
 It might also be secure and stuff but we'll have to see.
 `gun` is **beta quality** in all respects.
 Thanks in advance for making the sacrifice of your time (and perhaps coins!) while testing this software.
 
 The defining feature of `gun` is the [`bet`](./bet/betting.md) command which lets you do peer-to-peer betting by copy-pasting gibberish.
-This is the only reason to use this wallet at the moment so you should only put what you need to play with (and are willing to lose).
+Remember to only put in what you are willing to lose!
 
 ## Features
 
