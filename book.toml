@@ -7,3 +7,6 @@ title = "Go Up Number Bitcoin Wallet"
 
 [output.html]
 default-theme = "Ayu"
+
+
+[output.linkcheck]

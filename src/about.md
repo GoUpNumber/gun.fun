@@ -15,7 +15,7 @@ This is the only reason to use this wallet at the moment so you should only put 
 
 <big>
 
-- ✅ Peer-to-peer [betting](./betting/bet.md)
+- ✅ Peer-to-peer [betting](./bet/betting.md)
 - ✅ Easily setup with [ColdCard](./setup/setup.md#coldcard-path-to-sd-card)
 - ✅ PSBT & Descriptor based wallet
 - ✅ BIP39 seedwords (incl. [passphrase](https://gun.fun/setup/setup.html#seed) support)

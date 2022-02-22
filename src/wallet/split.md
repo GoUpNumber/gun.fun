@@ -1,7 +1,7 @@
 # gun split
 
 Split some coins into several outputs.
-This is useful when you want to have evenly sized outputs for making [bet proposals](./bet/proposal.md).
+This is useful when you want to have evenly sized outputs for making [bet proposals](../bet/propose.md).
 
 
 ```

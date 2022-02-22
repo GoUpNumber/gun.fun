@@ -20,9 +20,8 @@ The basic summary of this is that privacy for the offerer is relatively good but
 It's important to note that even if you do the bet privately (via direct messages) a blockchain observer can easily distinguish bet transactions from normal transactions with this protocol.
 Here's an [example transaction](https://mempool.space/tx/31e515c9316699f82887c68dc2dff04ff72b598e7e41a2f5cd0fccbc09379106) which shows what it looks like when a bet is claimed.
 
-For how this might improve in the future see the [roadmap](./roadmap.md).
+We're working on improving this in the future by using Taproot and (hopefully) `OP_CTV`.
 
 > 💡 Another important aspect of privacy is that `gun` uses [mempool.space](https://mempool.space) by default as a backend.
 > Connecting to it through Tor would improve privacy.
 > Even better would be connecting to your own esplora node (and safety!).
-> This is still tricky at the moment. See [roadmap](../roadmap.md#a-better-backend).

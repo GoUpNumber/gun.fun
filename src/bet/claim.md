@@ -21,4 +21,4 @@ Creates a transaction spending any coins you own from bets and sends them to an 
 
 {{#include ../fee_opt.md}}
 {{#include ../print_tx_opt.md}}
-{{#include ../yes_opt}}
+{{#include ../yes_opt.md}}

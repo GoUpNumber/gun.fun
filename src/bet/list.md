@@ -36,7 +36,7 @@ The list of bets has the following fields:
 - `in`: the duration between now and `outcome-time` in short human readable form.
 - `risk`: How much BTC you stand to lose in this bet.
 - `reward`: How much BTC you stand to gain.
-- `tags`: human readable strings you can attach to a bet with [`gun bet tag`](./bet/tag.md)
+- `tags`: human readable strings you can attach to a bet with [`gun bet tag`](./tag.md)
 - `oracle`: The oracle for the bet.
 - `i-bet`: which outcome you bet on.
 - `short-id`: the end of the `event-id` of the bet.

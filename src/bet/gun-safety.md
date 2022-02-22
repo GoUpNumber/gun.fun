@@ -21,11 +21,11 @@ Bet transactions enable *replace-by-fee* so either party can cancel it at this p
 The oracle may attest to the wrong outcome either maliciously or by accident.
 They may also do it publicly or covertly.
 There is nothing you can do about this other than call them out.
-Theoretically, you can also produce proof if the oracle misbehaved but I've left this until the [Taproot version](../roadmap.md) of the protocol which allows for doing this easily.
+Theoretically, you can also produce proof if the oracle misbehaved but this hasn't been implemented yet.
 
 The oracle may also just disappear.
 If the oracle fails to attest the coins are stuck in the current protocol.
-This will improve with taproot (see [roadmap](../roadmap)).
+This should improve in the future once we migrate to a Taproot based protocol.
 
 > 💡 The oracle [h00.ooo](https://outcome.observer/h00.ooo) which I set up for this experiment is run by me.
 > I will try and be accurate and timely with my attestations but the same caveat about [Prison Island](../install.md) applies here.
