@@ -33,9 +33,9 @@
     - [show](./bet/show.md)
     - [forget](./bet/forget.md)
     - [cancel](./bet/cancel.md)
+    - [claim](./bet/claim.md)
     - [tag](./bet/tag.md)
   - [offer tutorial](./bet/offer-tutorial.md)
   - [technical overview](./bet/protocol-overview.md)
 
 - [Formatting Output](./formatting-output.md)
-- [Roadmap](./roadmap.md)

@@ -7,3 +7,7 @@ title = "Go Up Number Bitcoin Wallet"
 
 [output.html]
 default-theme = "Ayu"
+git-repository-url = "https://github.com/llfourn/gun.fun"
+
+
+[output.linkcheck]

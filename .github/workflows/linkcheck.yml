@@ -1,0 +1,15 @@
+name: Linkcheck Action
+on: push
+
+jobs:
+  build:
+    name: Linkcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: >-
+          curl -sL https://github.com/rust-lang/mdBook/releases/download/v0.4.15/mdbook-v0.4.15-x86_64-unknown-linux-gnu.tar.gz | tar xvz && chmod u+x mdbook &&
+          mkdir -p mdbook-linkcheck && cd mdbook-linkcheck &&
+          curl -sL https://github.com/Michael-F-Bryan/mdbook-linkcheck/releases/latest/download/mdbook-linkcheck.x86_64-unknown-linux-gnu.zip -o mdbook-linkcheck.zip && unzip mdbook-linkcheck.zip && chmod u+x mdbook-linkcheck &&
+          export PATH="$PATH:$PWD" && cd .. &&
+          ./mdbook build

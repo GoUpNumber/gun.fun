@@ -15,7 +15,7 @@ I haven't figured out how I want to go about this yet so **it's better to just c
 > Actions that publicly modify the code maliciously are far more obvious.
 
 ### Import author key
-Releases should be signed with [this public key](./llfourn-public-key.asc) with this fingerprint:
+Releases should be signed with [this public key](./llfourn.asc) with this fingerprint:
 
 ```
 28EF 6BC9 14AB BA2B AB98  B796 A270 93B5 4DA1 1F65
