@@ -13,14 +13,16 @@ jobs:
           fetch-depth: 0
       - name: Install mdbook
         run: |
-          curl -sL https://github.com/rust-lang/mdBook/releases/download/v0.4.15/mdbook-v0.4.15-x86_64-unknown-linux-gnu.tar.gz | tar xvz && chmod u+x mdbook &&
+          mkdir mdbook
+          curl -sL https://github.com/rust-lang/mdBook/releases/download/v0.4.15/mdbook-v0.4.15-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
           echo `pwd`/mdbook >> $GITHUB_PATH
       - name: Install linkcheck
         run: |
           mkdir -p mdbook-linkcheck
           cd mdbook-linkcheck
-          curl -sL https://github.com/Michael-F-Bryan/mdbook-linkcheck/releases/latest/download/mdbook-linkcheck.x86_64-unknown-linux-gnu.zip -o mdbook-linkcheck.zip && unzip mdbook-linkcheck.zip
-          echo `pwd`/mdbook-linkcheck >> $GITHUB_PATH
+          curl -sL https://github.com/Michael-F-Bryan/mdbook-linkcheck/releases/latest/download/mdbook-linkcheck.x86_64-unknown-linux-gnu.zip -o mdbook-linkcheck.zip
+          unzip mdbook-linkcheck.zip
+          echo `pwd` >> $GITHUB_PATH
       - name: Build book
         run: |
           echo $PATH
