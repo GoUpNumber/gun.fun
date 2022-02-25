@@ -37,6 +37,7 @@ jobs:
           git update-ref -d refs/heads/gh-pages
           rm -rf *
           cp -rp ../book/html/* .
+          echo "gun.fun" > CNAME
           git add .
           git commit -m "Deploy $GITHUB_SHA to gh-pages"
           git push --force
