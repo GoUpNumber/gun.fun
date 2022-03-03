@@ -15,3 +15,6 @@ Set the esplora backend to your local esplora instance:
 ```
 gun config blockchain base_url set http://esplora.local:3000
 ```
+
+Nigiri is a docker based solution for quickly running a local bitcoin stack:
+https://nigiri.vulpem.com
