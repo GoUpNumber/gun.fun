@@ -54,7 +54,7 @@ Please help improve [this book](https://github.com/GoUpNumber/gun.fun) too.
 
 <big>
 
-Join us on [Discord](https://discord.gg/Wknb2A6J)
+Join us on [Discord](https://discord.gg/MB27cDJyrR)
 
 </big>
 
