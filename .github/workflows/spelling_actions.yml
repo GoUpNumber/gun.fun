@@ -1,0 +1,12 @@
+name: Spellcheck Action
+on: [pull_request]
+
+jobs:
+  build:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: sudo apt install -y aspell
+    - name: run spellcheck
+      run: sh spellcheck.sh

@@ -1,0 +1,1179 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Go Up Number Bitcoin Wallet</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+<!-- Primary Meta Tags -->
+<title>Go Up Number Bitcoin Wallet</title>
+<meta name="title" content="Go Up Number Bitcoin Wallet">
+<meta name="description" content="gun is the world's most fully featured stand alone command line bitcoin wallet, with peer-to-peer betting and cutting edge bitcoin tech.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gun.fun/">
+<meta property="og:title" content="Go Up Number Bitcoin Wallet">
+<meta property="og:description" content="gun is the world's most fully featured stand alone command line bitcoin wallet, with peer-to-peer betting and cutting edge bitcoin tech.">
+<meta property="og:image" content="https://user-images.githubusercontent.com/24557779/155477270-f6fcc522-a288-45d1-ab45-fe4931ea53a6.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://gun.fun/">
+<meta property="twitter:title" content="Go Up Number Bitcoin Wallet">
+<meta property="twitter:description" content="gun is the world's most fully featured stand alone command line bitcoin wallet, with peer-to-peer betting and cutting edge bitcoin tech.">
+<meta property="twitter:image" content="https://user-images.githubusercontent.com/24557779/155477270-f6fcc522-a288-45d1-ab45-fe4931ea53a6.png">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="about.html"><strong aria-hidden="true">1.</strong> About</a></li><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.</strong> Installing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup/upgradingv0.6.html"><strong aria-hidden="true">2.1.</strong> Upgrading</a></li></ol></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">3.</strong> Config/Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> commands</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup/setup.html"><strong aria-hidden="true">3.1.1.</strong> setup</a></li><li class="chapter-item expanded "><a href="setup/config.html"><strong aria-hidden="true">3.1.2.</strong> config</a></li></ol></li><li class="chapter-item expanded "><a href="config.html"><strong aria-hidden="true">3.2.</strong> configuration</a></li><li class="chapter-item expanded "><a href="GUN_DIR.html"><strong aria-hidden="true">3.3.</strong> GUN_DIR</a></li><li class="chapter-item expanded "><a href="backup-and-recovery.html"><strong aria-hidden="true">3.4.</strong> backup and recovery</a></li></ol></li><li class="chapter-item expanded "><a href="wallet/wallet.html"><strong aria-hidden="true">4.</strong> Wallet</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> commands</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="wallet/address.html"><strong aria-hidden="true">4.1.1.</strong> address</a></li><li class="chapter-item expanded "><a href="wallet/balance.html"><strong aria-hidden="true">4.1.2.</strong> balance</a></li><li class="chapter-item expanded "><a href="wallet/send.html"><strong aria-hidden="true">4.1.3.</strong> send</a></li><li class="chapter-item expanded "><a href="wallet/split.html"><strong aria-hidden="true">4.1.4.</strong> split</a></li><li class="chapter-item expanded "><a href="wallet/tx.html"><strong aria-hidden="true">4.1.5.</strong> tx</a></li><li class="chapter-item expanded "><a href="wallet/utxo.html"><strong aria-hidden="true">4.1.6.</strong> utxo</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="bet/betting.html"><strong aria-hidden="true">5.</strong> Betting</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bet/privacy.html"><strong aria-hidden="true">5.1.</strong> privacy</a></li><li class="chapter-item expanded "><a href="bet/oracles.html"><strong aria-hidden="true">5.2.</strong> oracles</a></li><li class="chapter-item expanded "><a href="bet/gun-safety.html"><strong aria-hidden="true">5.3.</strong> GuN safety</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> commands</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="bet/oracle.html"><strong aria-hidden="true">5.4.1.</strong> oracle</a></li><li class="chapter-item expanded "><a href="bet/propose.html"><strong aria-hidden="true">5.4.2.</strong> propose</a></li><li class="chapter-item expanded "><a href="bet/list.html"><strong aria-hidden="true">5.4.3.</strong> list</a></li><li class="chapter-item expanded "><a href="bet/offer.html"><strong aria-hidden="true">5.4.4.</strong> offer</a></li><li class="chapter-item expanded "><a href="bet/inspect.html"><strong aria-hidden="true">5.4.5.</strong> inspect</a></li><li class="chapter-item expanded "><a href="bet/reply.html"><strong aria-hidden="true">5.4.6.</strong> reply</a></li><li class="chapter-item expanded "><a href="bet/take.html"><strong aria-hidden="true">5.4.7.</strong> take</a></li><li class="chapter-item expanded "><a href="bet/show.html"><strong aria-hidden="true">5.4.8.</strong> show</a></li><li class="chapter-item expanded "><a href="bet/forget.html"><strong aria-hidden="true">5.4.9.</strong> forget</a></li><li class="chapter-item expanded "><a href="bet/cancel.html"><strong aria-hidden="true">5.4.10.</strong> cancel</a></li><li class="chapter-item expanded "><a href="bet/claim.html"><strong aria-hidden="true">5.4.11.</strong> claim</a></li><li class="chapter-item expanded "><a href="bet/tag.html"><strong aria-hidden="true">5.4.12.</strong> tag</a></li></ol></li><li class="chapter-item expanded "><a href="bet/offer-tutorial.html"><strong aria-hidden="true">5.5.</strong> offer tutorial</a></li><li class="chapter-item expanded "><a href="bet/protocol-overview.html"><strong aria-hidden="true">5.6.</strong> technical overview</a></li></ol></li><li class="chapter-item expanded "><a href="formatting-output.html"><strong aria-hidden="true">6.</strong> Formatting Output</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Go Up Number Bitcoin Wallet</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/GoUpNumber/gun.fun" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="go-up-number"><a class="header" href="#go-up-number">Go Up Number! <iframe src="https://ghbtns.com/github-btn.html?user=llfourn&repo=gun&type=star&count=true&size=large" style="float: right;" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></a></h1>
+<p>This is the user manual for <em>Go up Number!</em> — a command line Bitcoin wallet for plebs, degenerates and revolutionaries.</p>
+<p><code>gun</code> is the world's most fully featured stand alone command line bitcoin wallet.
+The main design goal of <code>gun</code> is for it to be <em>fun</em>!
+It might also be secure and stuff but we'll have to see.
+<code>gun</code> is <strong>beta quality</strong> in all respects.
+Thanks in advance for making the sacrifice of your time (and perhaps coins!) while testing this software.</p>
+<p>The defining feature of <code>gun</code> is the <a href="./bet/betting.html"><code>bet</code></a> command which lets you do peer-to-peer betting by copy-pasting gibberish.
+Remember to only put in what you are willing to lose!</p>
+<h2 id="features"><a class="header" href="#features">Features</a></h2>
+<big>
+<ul>
+<li>✅ Peer-to-peer <a href="./bet/betting.html">betting</a></li>
+<li>✅ Easily setup with <a href="./setup/setup.html#coldcard-path-to-sd-card">ColdCard</a></li>
+<li>✅ PSBT &amp; Descriptor based wallet</li>
+<li>✅ BIP39 seedwords (incl. <a href="https://gun.fun/setup/setup.html#seed">passphrase</a> support)</li>
+<li>✅ Different <a href="./formatting-output.html">output formats</a> for writing tools against (JSON, tabs)</li>
+<li>✅ Easy to run inside VM or docker container</li>
+<li>☐ Single signer Taproot <a href="https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki">BIP86</a> signing (in progress 👷)</li>
+<li>☐ Threshold Multisig Schnorr signatures i.e. <a href="https://eprint.iacr.org/2020/852.pdf">FROST</a>  (in research 🧪)</li>
+<li>☐ Make all HTTP requests through Tor with <a href="https://gitlab.torproject.org/tpo/core/arti"><code>arti</code></a></li>
+<li>☐ Peer-to-Peer betting protocol using Taproot</li>
+<li>☐ Lightning payments with LDK</li>
+<li>☐ Demo of improved <code>OP_CTV</code> betting <a href="https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-January/019808.html">mailing list post</a> on signet.</li>
+<li>☐ Coin selection <a href="https://github.com/GoUpNumber/gun/issues/86">issue#86</a></li>
+<li>☐ Fee bumping</li>
+<li>☐ WASM plugins/apps with <a href="https://crates.io/crates/wasmer/"><code>wasmer</code></a></li>
+<li>☐ A user interface that is graphical</li>
+</ul>
+</big>
+<h2 id="architecture"><a class="header" href="#architecture">Architecture</a></h2>
+<p><a href="https://github.com/GoUpNumber/gun"><code>gun</code></a> is written in rust and uses the <a href="https://bitcoindevkit.org/">Bitcoin Dev Kit</a> (bdk) to implement the underlying wallet functionality<sup class="footnote-reference"><a href="#1">1</a></sup>.
+It needs a trusted <a href="https://github.com/Blockstream/electrs">esplora backend</a> server to provide blockchain data and by default it uses <a href="https://mempool.space">mempool.space</a>.</p>
+<h2 id="contributing"><a class="header" href="#contributing">Contributing</a></h2>
+<p><a href="https://github.com/GoUpNumber/gun"><code>gun</code></a> is open source.
+It relies on the community to report and (if they can) fix bugs.
+Bugs aren't fun so please report them on the <a href="https://github.com/GoUpNumber/gun">repository</a>.
+Please help improve <a href="https://github.com/GoUpNumber/gun.fun">this book</a> too.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>Right now it uses a branch of bdk at <a href="https://github.com/llfourn/bdk/tree/gun">llfourn/bdk</a>.</p>
+</div>
+<h2 id="community"><a class="header" href="#community">Community</a></h2>
+<big>
+<p>Join us on <a href="https://discord.gg/MB27cDJyrR">Discord</a></p>
+</big>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="install"><a class="header" href="#install">Install</a></h1>
+<h2 id="binary-releases"><a class="header" href="#binary-releases">Binary Releases</a></h2>
+<p>Binary releases should be available at <a href="https://github.com/GoUpNumber/gun/releases">the repository</a> for some architectures (right now only <code>linux-amd64</code>).
+I haven't figured out how I want to go about this yet so <strong>it's better to just compile it yourself</strong> for now.</p>
+<blockquote>
+<p>⚠️ The author of <code>gun</code> is the COVID QR code formally known as Lloyd &quot;LLFourn&quot; Fournier.
+He resides in Prison Island Australia and according to <a href="https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r6623_aspassed/toc_pdf/20144b01.pdf;fileType=application%2Fpdf">new legislation</a> on the island he could be forced against his will to help the prison guards get access to his online accounts including GitHub.
+From there they can &quot;alter&quot; data to &quot;gather evidence&quot;.
+The takeover can be granted without Lloyd being suspected of doing anything illegal.
+The target of the action can be someone else unknown to him and can even be unknown or anonymous to the guards.</p>
+<p>So please make sure you check the signatures and more importantly prefer compiling the wallet yourself until he has figured out a more robust defense against this.
+Actions that publicly modify the code maliciously are far more obvious.</p>
+</blockquote>
+<h3 id="import-author-key"><a class="header" href="#import-author-key">Import author key</a></h3>
+<p>Releases should be signed with <a href="./llfourn.asc">this public key</a> with this fingerprint:</p>
+<pre><code>28EF 6BC9 14AB BA2B AB98  B796 A270 93B5 4DA1 1F65
+</code></pre>
+<p>To verify a binary's signature import <a href="https://twitter.com/LLFourn">@LLFourn's</a> key.</p>
+<pre><code>curl -sL https://gun.fun/llfourn.asc | gpg --import --import-options show
+# ⚠️ CHECK IT MATCHES THE FINGERPRINT ABOVE
+</code></pre>
+<h3 id="download-and-verify"><a class="header" href="#download-and-verify">Download and verify</a></h3>
+<p>Download the binary and signature and verify like so:</p>
+<pre><code>curl -sL -o gun https://github.com/GoUpNumber/gun/releases/download/v0.6.1/gun-linux-amd64
+curl -sL -o gun.asc https://github.com/GoUpNumber/gun/releases/download/v0.6.1/gun-linux-amd64.asc
+gpg --verify gun.asc # check it verifies against the key with fingerprint above
+chmod u+x gun
+./gun --help
+</code></pre>
+<p>...verifying this is <em>not fun</em> so hopefully we'll figure out a way to do updating <code>gun</code> without doing this every time.</p>
+<h2 id="compile-yourself"><a class="header" href="#compile-yourself">Compile yourself</a></h2>
+<p>Before compiling <code>gun</code> you need to <a href="https://www.rust-lang.org/tools/install">install rust</a> and cargo.
+Then,</p>
+<pre><code>git clone https://github.com/GoUpNumber/gun
+cd gun
+cargo install --path .
+# Make sure ~/.cargo/bin is in your $PATH
+</code></pre>
+<p>If you have a nightly toolchain you can install it faster and download/compile less dependencies using:</p>
+<pre><code>cargo -Z avoid-dev-deps install --path .
+</code></pre>
+<p>The <em>minimum supported rust version</em> for <code>gun</code> is <code>1.58.0</code>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="upgrading-from-pre-v060"><a class="header" href="#upgrading-from-pre-v060">Upgrading from pre <code>v0.6.0</code></a></h1>
+<p>If upgrading from a pre <code>v0.6.0</code> release you will need to do the following:</p>
+<ol>
+<li>Make sure you have no open bets (<code>gun bet list</code>should be empty).</li>
+<li>Make a note of how many coins you have <code>gun -s balance</code>.</li>
+<li>Backup your existing gun directory by moving it from its current location.</li>
+<li>Install the latest version of <code>gun</code>.</li>
+<li>Run <code>gun setup seed --from-existing &lt;path-to-backup&gt;/seed.txt</code></li>
+<li>Run <code>gun -s balance</code> and to check your coins are there.</li>
+<li>Delete the backup</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="setup"><a class="header" href="#setup">Setup</a></h1>
+<p>Use the <a href="./setup/setup.html"><code>setup</code></a> command to do initial wallet.
+After that, you can use the <a href="./setup/config.html"><code>config</code></a> command to tweak the wallet's configuration.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-setup"><a class="header" href="#gun-setup">gun setup</a></h1>
+<p>Setup a new wallet (or restore an old one).</p>
+<p>The setup process will create the <em>gun directory</em> and populate it with:</p>
+<ol>
+<li><code>config.json</code>: A <a href="setup/./config.html">configuration</a> file.</li>
+<li><code>database.sled</code>: The database directory containing protocol data and wallet data.</li>
+</ol>
+<p>The only thing that is set in stone at setup time are the wallet's descriptors.
+These are written to the database.</p>
+<h2 id="subcommands"><a class="header" href="#subcommands">Subcommands</a></h2>
+<p>Each subcommand sets up a wallet in a different way.
+They all take the <code>--network</code> option in addition to their specific options.</p>
+<ul>
+<li><code>--network &lt;bitcoin|regtest|testnet|signet&gt;</code>: sets which Bitcoin network we are using. The default is <code>bitcoin</code> (mainnet).</li>
+</ul>
+<h3 id="seed"><a class="header" href="#seed"><code>seed</code></a></h3>
+<p>Set up <code>gun</code> using <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39</a> seed words.
+<code>gun</code> saves words to <code>$GUN_DIR/seed.txt</code> and reads them in each time you need to sign.</p>
+<ul>
+<li><code>--from-existing &lt;FILE&gt;</code>: reads existing <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39</a> seed words from a file (or <code>-</code> to read from <code>STDIN</code>).</li>
+<li><code>--n-words &lt;[12|24]&gt;</code>: specifies the number of seed words to use (default: 12).</li>
+<li><code>--use-passphrase</code>: apply a BIP39 passphrase to the seed words when deriving private keys from it.</li>
+</ul>
+<blockquote>
+<p>⚠ <code>--from-existing</code> and <code>--use-passphrase</code> will only restore coins from existing seed words if the coins were held with the same BIP39 passphrase.
+You cannot upgrade the security of existing seed words that didn't have a passphrase before with this command.</p>
+</blockquote>
+<h3 id="coldcard-path-to-sd-card"><a class="header" href="#coldcard-path-to-sd-card"><code>coldcard &lt;path-to-sd-card&gt;</code></a></h3>
+<p>You can use <code>gun</code> to output PSBTs to an SD card that you can then sign with your <a href="https://coldcard.com/">ColdCard</a>.
+Once you've signed them on the device <code>gun</code> can broadcast them.</p>
+<h4 id="step-1"><a class="header" href="#step-1">Step 1</a></h4>
+<p>First make a wallet export. On your device:</p>
+<pre><code>Advanced -&gt; MicroSD Card -&gt; Export Wallet -&gt; Generic JSON
+</code></pre>
+<p>This should save a file <code>coldcard-export.json</code> to your SD card which contains the information gun needs to load your wallet.</p>
+<h4 id="step-2-optional"><a class="header" href="#step-2-optional">Step 2 (optional)</a></h4>
+<p>In order to engage in protocols (e.g. betting) you'll also need to export some entropy that <code>gun</code> can use to generate keys that hold coins temporarily.
+On your device:</p>
+<ol>
+<li>Navigate to <code>Advanced -&gt; Derive Entropy -&gt; 64-bytes hex</code></li>
+<li>Enter index <code>330</code></li>
+<li>Then, press <code>1</code> to export the resulting entropy to <code>drv-hex-idx330.txt</code> on your SD card.</li>
+</ol>
+<blockquote>
+<p>💡 you can set this later using <a href="setup/./config.html"><code>gun config protocol</code></a> if you skip this now.</p>
+</blockquote>
+<h4 id="step-3"><a class="header" href="#step-3">Step 3</a></h4>
+<p>Insert the SD card to your computer and initialize gun with:</p>
+<pre><code>gun setup coldcard /path/to/sd/card --import-entropy
+</code></pre>
+<p>or if you skipped step 2:</p>
+<pre><code>gun setup coldcard /path/to/sd/card
+</code></pre>
+<blockquote>
+<p>💡 If you encounter a ColdCard signing error &quot;We require subpaths to be specified in the PSBT.&quot; then please <a href="https://coldcard.com/docs/upgrade">update your firmware</a>.</p>
+</blockquote>
+<h3 id="xkey-xpubxprv"><a class="header" href="#xkey-xpubxprv"><code>xkey &lt;xpub|xprv&gt;</code></a></h3>
+<p>You can initialize gun using an extended key descriptor:</p>
+<pre><code>gun setup xkey &quot;[E83E2DB9/84'/0'/0']xpub66..mSXJj&quot;
+</code></pre>
+<p>The descriptor is in the form <code>[master-fingerprint/derivation'/path']xkey</code>.
+<code>gun</code> will derive <code>p2wpkh</code> external keys at <code>xkey/0/*</code> and internal keys at <code>xkey/1/*</code> as is done in BIP84, BIP86 etc.</p>
+<p>If you initialize it with an <code>xpriv</code> you will be able to sign transactions.
+The <code>xpriv</code> itself will be stored unencrypted in the database.</p>
+<p>If you initialize with an <code>xpub</code> it will be watch-only until you also add a signer with <a href="setup/./config.html"><code>gun config signer</code></a>.</p>
+<h3 id="descriptor-external-internal"><a class="header" href="#descriptor-external-internal"><code>descriptor &lt;external&gt; [internal]</code></a></h3>
+<p>You can specify explicit <a href="https://bitcoinops.org/en/topics/miniscript/">miniscript</a> descriptors for the wallet.
+<code>gun</code> will use <code>external</code> to derive receiving addresses and, if provided, use <code>internal</code> for deriving change addresses.
+This is a powerful option that allows you to set up custom multisigs etc.</p>
+<p>The following is equivalent to doing <code>xkey</code> example above:</p>
+<pre><code>gun setup descriptor wpkh([AAB893A5/84'/0'/0']xpub66..mSXJj/0/* wpkh([AAB893A5/84'/0'/0']xpub66..mSXJj/1/*
+</code></pre>
+<p>You can use private key descriptors as well but remember that they will be stored in plaintext in the database.
+If you provide public key descriptors the wallet will be watch-only until you add a signer with <a href="setup/./config.html"><code>gun config signer</code></a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-config"><a class="header" href="#gun-config">gun config</a></h1>
+<p><code>gun config</code> lets you get and set configuration values.
+The command doesn't let you set every configuration value but it should be a more stable and safe than editing the <a href="setup/../config.html"><code>config.json</code></a> directly.</p>
+<p>See <code>gun config --help</code> for all the configuration options.</p>
+<h2 id="common-usage"><a class="header" href="#common-usage">Common usage</a></h2>
+<p>Set the esplora backend to your local esplora instance:</p>
+<pre><code>gun config blockchain base_url set http://esplora.local:3000
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="configuration"><a class="header" href="#configuration">Configuration</a></h1>
+<p>The main configuration file is in <code>~/.gun/config.json</code> and looks something like this:</p>
+<pre><code class="language-json">{
+  &quot;version&quot;: &quot;1&quot;,
+  &quot;network&quot;: &quot;signet&quot;,
+  &quot;blockchain&quot;: {
+    &quot;type&quot;: &quot;esplora&quot;,
+    &quot;base_url&quot;: &quot;https://mempool.space/signet/api&quot;,
+    &quot;concurrency&quot;: 10,
+    &quot;stop_gap&quot;: 10
+  },
+  &quot;signers&quot;: [
+    {
+      &quot;kind&quot;: &quot;seed-words-file&quot;,
+    }
+  ]
+}
+</code></pre>
+<h2 id="configuration-keys"><a class="header" href="#configuration-keys">Configuration keys</a></h2>
+<h3 id="network"><a class="header" href="#network"><code>network</code></a></h3>
+<p>Which network the wallet operates on:</p>
+<ul>
+<li><code>bitcoin</code>: The bitcoin  Bitcoin.</li>
+<li><code>testnet</code>: the Bitcoin testnet.</li>
+<li><code>regtest</code>: A local regtest node.</li>
+<li><code>signet</code>: The <em>signet</em> testnet</li>
+</ul>
+<h3 id="blockchain"><a class="header" href="#blockchain"><code>blockchain</code></a></h3>
+<p>Configures the blockchain backend that the wallet will use.</p>
+<p>At the moment only esplora style backends are supported (e.g. <a href="https://mempool.space">https://mempool.space/api</a> and <a href="https://blockstream.info/api">https://blockstream.info/api</a>).</p>
+<h4 id="base_url"><a class="header" href="#base_url"><code>base_url</code></a></h4>
+<p>Sets the esplora HTTP API backend to make requests to</p>
+<h4 id="concurrency"><a class="header" href="#concurrency"><code>concurrency</code></a></h4>
+<p>How many requests to make in parallel to the esplora backend.</p>
+<h4 id="stop_gap"><a class="header" href="#stop_gap"><code>stop_gap</code></a></h4>
+<p>How many unused addresses should <code>gun</code> wait to find until it stops scanning more when syncing.</p>
+<h3 id="signers"><a class="header" href="#signers"><code>signers</code></a></h3>
+<p>signers is an array of signing methods that will be used to sign transactions.
+Most of the time this will have a single entry.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun_dir"><a class="header" href="#gun_dir"><code>GUN_DIR</code></a></h1>
+<p><code>gun</code> always needs to know its <code>GUN_DIR</code> directory.
+By default this <code>$HOME/.gun</code>.
+You can check what it is by running:</p>
+<pre><code>gun config dir get
+</code></pre>
+<p>You can override the default in two ways:</p>
+<ol>
+<li>By setting the <code>GUN_DIR</code> environment variable.</li>
+</ol>
+<pre><code class="language-sh"># Create a wallet with at ~/my_other_wallet
+export GUN_DIR=~/my_other_wallet
+gun setup seed
+gun address new
+</code></pre>
+<ol start="2">
+<li>Or, by setting the <code>-d</code> flag</li>
+</ol>
+<pre><code class="language-sh">gun -d my_other_wallet setup seed
+gun -d my_other_wallet address new
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="backup-and-recovery"><a class="header" href="#backup-and-recovery">Backup and Recovery</a></h1>
+<p>In your <a href="./GUN_DIR.html">gun directory</a> (usually <code>~/.gun</code>) there are a couple of files that will cause pain if you lose them.</p>
+<h2 id="seedtxt"><a class="header" href="#seedtxt"><code>seed.txt</code></a></h2>
+<p><code>seed.txt</code> contains your secret <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39</a> seed phrase if you setup the wallet using <code>gun setup seed</code>.
+If you lose <code>seed.txt</code> you lose all your coins.
+If someone else gets their hands on it they can take all your coins.
+<code>seed.txt</code> never changes so you only ever need to take one backup.</p>
+<h2 id="databasesled"><a class="header" href="#databasesled"><code>database.sled</code></a></h2>
+<p>If you lose <code>database.sled</code> you lose the coins from bets you have <em>won</em> or will <em>win</em> but haven't claimed yet.
+To guarantee you don't lose coins from this, you must backup <code>database.sled</code> after each bet.
+The best way to avoid loss of funds here is to claim your winnings in a timely manner.</p>
+<p>Theoretically, it is possible to recover these with your main wallet but that hasn't been implemented yet.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wallet-commands"><a class="header" href="#wallet-commands">Wallet Commands</a></h1>
+<p>Gun supports just enough wallet functionality to make it useful.
+Here are the commands:</p>
+<ul>
+<li><a href="wallet/./address.html"><code>gun address</code></a> get, show and list addresses.</li>
+<li><a href="wallet/./balance.html"><code>gun balance</code></a> show the wallet's balance.</li>
+<li><a href="wallet/./send.html"><code>gun send</code></a> send coins out of a wallet.</li>
+<li><a href="wallet/./split.html"><code>gun split</code></a> split coins into evenly sized UTXOs.</li>
+<li><a href="wallet/./tx.html"><code>gun tx</code></a> view transactions made by this wallet.</li>
+<li><a href="wallet/./utxo.html"><code>gun utxo</code></a> view UTXOs owned by this wallet.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-address"><a class="header" href="#gun-address">gun address</a></h1>
+<p>Get and view addresses.</p>
+<h2 id="synopsis"><a class="header" href="#synopsis">Synopsis</a></h2>
+<pre><code>gun address &lt;subcommand&gt;
+</code></pre>
+<h2 id="subcommands-1"><a class="header" href="#subcommands-1">Subcommands</a></h2>
+<p>These commands interact with your wallet's <em>external</em> addresses. 
+Internal addresses can't be seen.</p>
+<p>You can see change address with coins in <a href="wallet/./utxo.html#list"><code>gun utxo list</code></a>.</p>
+<h3 id="new"><a class="header" href="#new">new</a></h3>
+<pre><code>gun address new
+</code></pre>
+<p>Get a new address from the wallet.
+The wallet remembers that it has given out this address in the database.</p>
+<h3 id="last-unused"><a class="header" href="#last-unused">last-unused</a></h3>
+<pre><code>gun address last-unused
+</code></pre>
+<p>Gets a new address if it hasn't been used yet.
+Otherwise outputs a fresh address.</p>
+<h3 id="list"><a class="header" href="#list">list</a></h3>
+<pre><code>gun address list
+</code></pre>
+<p>List all addresses given out by this wallet.
+By default this only shows <code>external</code> addresses i.e. addresses produced by <code>gun address new</code>.</p>
+<p>Options:</p>
+<ul>
+<li><code>-a, --all</code>: Show all addresses (internal &amp; external)</li>
+<li><code>-i, --internal</code>: Show only internal addresses</li>
+</ul>
+<h3 id="show"><a class="header" href="#show">show</a></h3>
+<pre><code>gun address show &lt;address&gt;
+</code></pre>
+<p>Get more details about a particular wallet address.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-balance"><a class="header" href="#gun-balance">gun balance</a></h1>
+<p>Get the balance of your wallet.</p>
+<blockquote>
+<p>💡 Ah my brethren, these are the numbers you must make go up.</p>
+</blockquote>
+<h2 id="synopsis-1"><a class="header" href="#synopsis-1">Synopsis</a></h2>
+<pre><code>gun balance
+</code></pre>
+<p>But often you want to sync first</p>
+<pre><code>gun -s balance
+</code></pre>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>These are the meanings of the numbers:</p>
+<ul>
+<li><strong>confirmed</strong>: coins that are owned by this wallet and confirmed in the chain (but not <strong>in-use</strong>).</li>
+<li><strong>unconfirmed</strong>: coins that have been sent to your wallet but haven't been confirmed (and not <strong>in-use</strong>).</li>
+<li><strong>unclaimed</strong>: coins that you own but you haven't claimed -- if you <a href="wallet/../backup-and-recovery.html">lose your database</a> you will lose them.</li>
+<li><strong>available</strong>: coins that are available to be used. This is just the total of the above.</li>
+<li><strong>locked</strong>: coins that are locked in some protocol execution (e.g. bet) you might get access to them or you might not!</li>
+<li><strong>in-use</strong>: coins that are being reserved for use in some protocol execution (e.g. a bet).</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-send"><a class="header" href="#gun-send">gun send</a></h1>
+<p>Sends coins to an address.</p>
+<blockquote>
+<p>⚠️ Sending your coins gives them to someone else.
+This should be avoided wherever possible.</p>
+</blockquote>
+<h2 id="synopsis-2"><a class="header" href="#synopsis-2">Synopsis</a></h2>
+<pre><code>gun send [OPTIONS] &lt;value&gt; &lt;to&gt;
+</code></pre>
+<p>send 0.1 BTC to an address:</p>
+<pre><code>gun send 0.1btc bc1qhg0xqvrg50x50qnjqgfaa8jlle8uz7q3l2c5ud
+</code></pre>
+<p>Same as the above but with different denomination:</p>
+<pre><code>gun send 10_000_000sat bc1qhg0xqvrg50x50qnjqgfaa8jlle8uz7q3l2c5ud
+</code></pre>
+<p>Send all the available funds to the address:</p>
+<pre><code>gun send all bc1qhg0xqvrg50x50qnjqgfaa8jlle8uz7q3l2c5ud
+</code></pre>
+<h2 id="description-1"><a class="header" href="#description-1">Description</a></h2>
+<p><code>&lt;value&gt;</code> should be an amount to send with denomination.
+Set it to <code>all</code> if you want to send all the coins in your wallet otherwise provide a specific amount.
+If the denomination is left out it is assumed to be satoshis.
+Underscores will be ignored.
+For example all the following mean one million satoshis:</p>
+<ul>
+<li><code>1000000sat</code></li>
+<li><code>1_000_000</code></li>
+<li><code>1M</code></li>
+<li><code>0.01btc</code></li>
+<li><code>10_000bits</code></li>
+</ul>
+<blockquote>
+<p>💡Professional hackers use the denomination <code>bits</code> exclusively.</p>
+</blockquote>
+<h2 id="options"><a class="header" href="#options">Options</a></h2>
+<h3 id="--fee-fee"><a class="header" href="#--fee-fee"><code>--fee &lt;fee&gt;</code></a></h3>
+<p>Set the fee for the transaction.</p>
+<p>You can choose from:</p>
+<ul>
+<li><code>--fee=rate:4.5</code> set the fee to <em>4.5</em> sats-per-vbyte.</li>
+<li><code>--fee=abs:500</code> set the fee to exactly 500 sats.</li>
+<li><code>--fee=in-blocks:10</code> set the fee so it should get into the chain some time in the next 10 blocks.</li>
+</ul>
+<p>The default is <code>in-blocks:1</code> i.e. set the fee so it gets into the next block.</p>
+<h3 id="--print-tx"><a class="header" href="#--print-tx"><code>--print-tx</code></a></h3>
+<p>Print the tx as hex instead of broadcasting it.
+This will assume you're going to broadcast the tx yourself.</p>
+<h3 id="--bump-claiming"><a class="header" href="#--bump-claiming"><code>--bump-claiming</code></a></h3>
+<p>Spend coins from any bets that are currently in the <code>claiming</code> state. The <code>claiming</code> state means there is already a pending transaction spending them so this new transaction will <em>replace-by-fee</em> that previous transaction. You should make sure the feerate on this one is higher than the previous.</p>
+<h3 id="--no-spend-unclaimed"><a class="header" href="#--no-spend-unclaimed"><code>--no-spend-unclaimed</code></a></h3>
+<p>Don't spend coins you own outside of your wallet e.g. coins from bets you won.
+By default gun spends these coins back into your wallet with any chance it gets but this option stops that behavior.</p>
+<h3 id="--spend-in-use"><a class="header" href="#--spend-in-use"><code>--spend-in-use</code></a></h3>
+<p>Spend even the coins you are using for other things.</p>
+<p>When you make a proposal or an offer the outputs used in the bet are considered to be <strong>in-use</strong>.
+This option allows the transaction to spend them (but doesn't force it to).</p>
+<h3 id="-y---yes"><a class="header" href="#-y---yes"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-split"><a class="header" href="#gun-split">gun split</a></h1>
+<p>Split some coins into several outputs.
+This is useful when you want to have evenly sized outputs for making <a href="wallet/../bet/propose.html">bet proposals</a>.</p>
+<pre><code>gun split [OPTIONS] &lt;output-size&gt; &lt;n&gt;
+</code></pre>
+<h2 id="synopsis-3"><a class="header" href="#synopsis-3">Synopsis</a></h2>
+<p>Create 5 outputs of 0.05 BTC each.</p>
+<pre><code>gun split 0.05BTC 5
+</code></pre>
+<h2 id="options-1"><a class="header" href="#options-1">Options</a></h2>
+<h3 id="--fee-fee-1"><a class="header" href="#--fee-fee-1"><code>--fee &lt;fee&gt;</code></a></h3>
+<p>Set the fee for the transaction.</p>
+<p>You can choose from:</p>
+<ul>
+<li><code>--fee=rate:4.5</code> set the fee to <em>4.5</em> sats-per-vbyte.</li>
+<li><code>--fee=abs:500</code> set the fee to exactly 500 sats.</li>
+<li><code>--fee=in-blocks:10</code> set the fee so it should get into the chain some time in the next 10 blocks.</li>
+</ul>
+<p>The default is <code>in-blocks:1</code> i.e. set the fee so it gets into the next block.</p>
+<h3 id="--print-tx-1"><a class="header" href="#--print-tx-1"><code>--print-tx</code></a></h3>
+<p>Print the tx as hex instead of broadcasting it.
+This will assume you're going to broadcast the tx yourself.</p>
+<h3 id="--bump-claiming-1"><a class="header" href="#--bump-claiming-1"><code>--bump-claiming</code></a></h3>
+<p>Spend coins from any bets that are currently in the <code>claiming</code> state. The <code>claiming</code> state means there is already a pending transaction spending them so this new transaction will <em>replace-by-fee</em> that previous transaction. You should make sure the feerate on this one is higher than the previous.</p>
+<h3 id="--no-spend-unclaimed-1"><a class="header" href="#--no-spend-unclaimed-1"><code>--no-spend-unclaimed</code></a></h3>
+<p>Don't spend coins you own outside of your wallet e.g. coins from bets you won.
+By default gun spends these coins back into your wallet with any chance it gets but this option stops that behavior.</p>
+<h3 id="--spend-in-use-1"><a class="header" href="#--spend-in-use-1"><code>--spend-in-use</code></a></h3>
+<p>Spend even the coins you are using for other things.</p>
+<p>When you make a proposal or an offer the outputs used in the bet are considered to be <strong>in-use</strong>.
+This option allows the transaction to spend them (but doesn't force it to).</p>
+<h3 id="-y---yes-1"><a class="header" href="#-y---yes-1"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-tx"><a class="header" href="#gun-tx">gun tx</a></h1>
+<p>Display transactions related to this wallet.</p>
+<h2 id="synopsis-4"><a class="header" href="#synopsis-4">Synopsis</a></h2>
+<pre><code>gun tx &lt;subcommand&gt;
+</code></pre>
+<h2 id="subcommands-2"><a class="header" href="#subcommands-2">Subcommands</a></h2>
+<p>For a transaction to be in the database it must spend to or from an address owned by this wallet.</p>
+<h3 id="list-1"><a class="header" href="#list-1">list</a></h3>
+<pre><code>gun tx list
+</code></pre>
+<p>Lists transactions associated with the wallet.
+This only keeps track of transactions that come in and out of the main wallet.
+For example, if you <a href="wallet/../bet/claim.html"><code>claim</code></a> coins from a won bet to an unrelated address it won't show up here.</p>
+<p>When you're waiting for a transaction to come in it can be handy to try:</p>
+<pre><code>gun -s tx list
+</code></pre>
+<h3 id="show-1"><a class="header" href="#show-1">show</a></h3>
+<pre><code>gun tx show &lt;txid&gt;
+</code></pre>
+<p>Shows more details about a particular wallet transaction.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-utxo"><a class="header" href="#gun-utxo">gun utxo</a></h1>
+<p>Display your <em>unspent transaction outputs</em> (UTXOs).</p>
+<blockquote>
+<p>💡 Bitcoin is a game of UTXO acquisition.
+Get as many of these as you can.</p>
+</blockquote>
+<h2 id="synopsis-5"><a class="header" href="#synopsis-5">Synopsis</a></h2>
+<pre><code>gun utxo &lt;subcommnd&gt;
+</code></pre>
+<h2 id="subcommands-3"><a class="header" href="#subcommands-3">Subcommands</a></h2>
+<p>At the moment a UTXO will no longer show up here if it has been spent by an unconfirmed transaction.
+It will show up if it is on a </p>
+<h3 id="list-2"><a class="header" href="#list-2">list</a></h3>
+<pre><code>gun utxo list
+</code></pre>
+<p>List all your UTXOs.</p>
+<h3 id="show-2"><a class="header" href="#show-2">show</a></h3>
+<pre><code>gun utxo show &lt;outpoint&gt;
+</code></pre>
+<p>Show more details about a UTXO.
+<code>&lt;utxo&gt;</code> is given in <code>txid:vout</code> format e.g</p>
+<pre><code>gun utxo show 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b:0
+</code></pre>
+<p>The above command shouldn't work unless that's your UTXO (it isn't).</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-betting"><a class="header" href="#gun-betting">GuN Betting</a></h1>
+<p>The main reason I developed <code>gun</code> was to be able to experiment with Bitcoin betting through social media and messaging apps.
+I originally wrote down the idea in <em><a href="https://raw.githubusercontent.com/LLFourn/two-round-dlc/master/main.pdf">How to Make a Prediction Market on Twitter with Bitcoin</a></em>.
+At a high level this is how it works:</p>
+<ol>
+<li>The first person, the <em>proposer</em>, <em>proposes</em> a bet by choosing an event to bet on (including the oracle to use) and value to risk.
+The proposal data also contains the inputs they will use to fund the bet. See <a href="bet/./propose.html"><code>gun bet propose</code></a>.</li>
+<li>Anyone who sees the proposal may make an <em>offer</em> in response by choosing how much they will risk to gain the proposer's coins and which outcome they want to bet on. See <a href="bet/./offer.html"><code>gun bet offer</code></a>.
+The offer is fully encrypted and can only be decrypted by the proposer.
+In fact, it might not be an offer at all since you instead can use <a href="bet/./reply.html"><code>gun bet reply</code></a> to send an encrypted message instead which will be indistinguishable from an encrypted offer.</li>
+<li>The proposer decrypts any offer they get and if they want to take the other side of the bet they broadcast the bet funding transaction.
+They may only choose one offer. See <a href="bet/./take.html"><code>gun bet take</code></a>.</li>
+<li>Both parties monitor the state of the bet by using <a href="bet/./list.html"><code>gun -s bet list</code></a>.</li>
+<li>When the oracle publishes the outcome the winning party gains ownership of the coins.
+When they're ready they can move the coins into their main wallet with <a href="bet/./claim.html"><code>gun bet claim</code></a>.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="privacy"><a class="header" href="#privacy">Privacy</a></h1>
+<p>This protocol is tries to guarantee as much privacy as possible against an observer who sees the proposal, a list of offers and the blockchain.
+Such an observer will be able to figure out:</p>
+<ol>
+<li>What event the bet was on (they can see it in the proposal). This assumes the proposer is only using the input(s) for one bet but this might not be the case.</li>
+<li>Where the bet transaction is in the blockchain and which output is the bet output and whose change output is whose (they can see the proposal's inputs so they will be able to find it).</li>
+<li>Which inputs belong to the proposer and which belong to the offerer (the inputs belonging to the proposer are in the proposal).</li>
+<li>How much was bet by each party (they know how much the proposer is risking and the value in the bet output).</li>
+<li>Which change output on the bet transaction belongs to the proposer and offer respectively (the proposer puts their change in the proposal so the other one must belong to offerer).</li>
+</ol>
+<p>They should be unable to determine:</p>
+<ol>
+<li>Which offer was taken or whether the offer that was taken was in the list of observed offers.</li>
+<li>Whether an offer is a real offer or an encrypted message or otherwise random gibberish.</li>
+<li>Who won the bet (they don't know who bet on what).</li>
+</ol>
+<p>The basic summary of this is that privacy for the offerer is relatively good but for the proposer it is relatively bad.</p>
+<p>It's important to note that even if you do the bet privately (via direct messages) a blockchain observer can easily distinguish bet transactions from normal transactions with this protocol.
+Here's an <a href="https://mempool.space/tx/31e515c9316699f82887c68dc2dff04ff72b598e7e41a2f5cd0fccbc09379106">example transaction</a> which shows what it looks like when a bet is claimed.</p>
+<p>We're working on improving this in the future by using Taproot and (hopefully) <code>OP_CTV</code>.</p>
+<blockquote>
+<p>💡 Another important aspect of privacy is that <code>gun</code> uses <a href="https://mempool.space">mempool.space</a> by default as a backend.
+Connecting to it through Tor would improve privacy.
+Even better would be connecting to your own esplora node (and safety!).</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="oracles"><a class="header" href="#oracles">Oracles</a></h2>
+<p>For this experiment I developed an oracle called <a href="https://github.com/LLFourn/olivia"><code>olivia</code></a> and deployed it at <a href="https://h00.ooo">h00.ooo</a>.
+<code>olivia</code> is badly documented and still changing a lot but you're welcome to try and run your own one.</p>
+<p>To find events I developed a simple oracle explorer <a href="https://outcome.observer">outcome.observer</a> which can browse the events of an oracle.
+If you run your own oracle and want me to list it on outcome.observer make a PR to <a href="https://github.com/LLFourn/outcome-observer">the repo</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-safety"><a class="header" href="#gun-safety">GuN safety</a></h1>
+<p>The most obvious way of losing coins in a bet is betting on the wrong thing.
+But there are other more subtle and much less fun ways of losing your coins with <code>gun</code>.</p>
+<h2 id="the-late-bet"><a class="header" href="#the-late-bet">The Late Bet</a></h2>
+<p>A malicious party may try to get a bet transaction to be confirmed <em>after</em> the event has already transpired and has resulted in their favor.
+For example, in a bet on a football match imagine if the proposer only takes the offer after the team they are betting has scored the first goal.
+The offerer must protect against this by canceling their offer before the game starts. See <a href="bet/./cancel.html"><code>gun bet cancel</code></a>.</p>
+<p>The proposer must be careful about taking offers with a low transaction fee.
+If the transaction fee is low it may be stuck in the mempool until after the game starts.
+The offerer may then cheat by double spending his output if it looks like the game is going against him.
+Bet transactions enable <em>replace-by-fee</em> so either party can cancel it at this point by double spending one of their inputs (this is what <a href="bet/./cancel.html"><code>gun bet cancel</code></a> does).</p>
+<h2 id="oracle-cheats"><a class="header" href="#oracle-cheats">Oracle cheats</a></h2>
+<p>The oracle may attest to the wrong outcome either maliciously or by accident.
+They may also do it publicly or covertly.
+There is nothing you can do about this other than call them out.
+Theoretically, you can also produce proof if the oracle misbehaved but this hasn't been implemented yet.</p>
+<p>The oracle may also just disappear.
+If the oracle fails to attest the coins are stuck in the current protocol.
+This should improve in the future once we migrate to a Taproot based protocol.</p>
+<blockquote>
+<p>💡 The oracle <a href="https://outcome.observer/h00.ooo">h00.ooo</a> which I set up for this experiment is run by me.
+I will try and be accurate and timely with my attestations but the same caveat about <a href="bet/../install.html">Prison Island</a> applies here.</p>
+</blockquote>
+<h2 id="lost-data"><a class="header" href="#lost-data">Lost data</a></h2>
+<p>Losing data before you've won and claimed a bet is bad.
+Theoretically it's possible to recover the funds and bet but this hasn't been implemented yet.</p>
+<p>see <a href="bet/../backup-and-recovery.html">backup and recovery</a> for more details.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-oracle"><a class="header" href="#gun-bet-oracle">gun bet oracle</a></h1>
+<p>Add, List and remove oracles from trusted list.
+For now, the security model for oracles is <em><a href="https://en.wikipedia.org/wiki/Trust_on_first_use">trust on first use</a></em> (TOFU).</p>
+<h2 id="synopsis-6"><a class="header" href="#synopsis-6">Synopsis</a></h2>
+<pre><code>gun bet oracle &lt;subcommand&gt;
+</code></pre>
+<h2 id="subcommands-4"><a class="header" href="#subcommands-4">Subcommands</a></h2>
+<h3 id="add"><a class="header" href="#add">add</a></h3>
+<pre><code>gun bet oracle add [options] &lt;oracle-id&gt;
+</code></pre>
+<p>Adds an oracle to the list of trusted oracles.
+For example the following command will make a request to <a href="https://h00.ooo">https://h00.ooo</a> and prompt you whether to accept it. </p>
+<pre><code>gun bet oracle add h00.ooo
+</code></pre>
+<h4 id="options-2"><a class="header" href="#options-2">Options</a></h4>
+<h5 id="-y---yes-2"><a class="header" href="#-y---yes-2"><code>-y, --yes</code></a></h5>
+<p>Accept the keys the oracle gives you without asking.</p>
+<h3 id="list-3"><a class="header" href="#list-3">list</a></h3>
+<pre><code>gun bet oracle list
+</code></pre>
+<p>List trusted oracles.</p>
+<h3 id="show-3"><a class="header" href="#show-3">show</a></h3>
+<pre><code>gun bet oracle show &lt;oracle-id&gt;
+</code></pre>
+<p>Display details about an oracle. For example, </p>
+<pre><code>gun bet oracle show h00.ooo
+</code></pre>
+<p><em>TODD: document the output here</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-propose"><a class="header" href="#gun-bet-propose">gun bet propose</a></h1>
+<p>Propose an event to bet on and how much you are willing to risk.</p>
+<h2 id="synopsis-7"><a class="header" href="#synopsis-7">Synopsis</a></h2>
+<pre><code>gun bet propose [options] &lt;event-url&gt;
+</code></pre>
+<p>For example</p>
+<pre><code>gun bet propose https://h00.ooo/random/2021-11-01T00:00:00/heads_tails.winner
+</code></pre>
+<h2 id="description-2"><a class="header" href="#description-2">Description</a></h2>
+<p><code>gun</code> bets start with a proposal which set the oracle, event and value the <em>proposer</em> will risk on the bet.</p>
+<p>The oracle and the event are embedded in the <code>&lt;event-url&gt;</code> like <code>https://h00.ooo/random/2021-08-11T04:29:00/heads_tails.winner</code>.
+Right now only <code>https</code> URLs are supported.
+The oracle for the bet is the host of the URL e.g. <code>h00.ooo</code>.
+In order to discover an oracle and event to bet on you can use an oracle explorer like <a href="https://outcome.observer">outcome.observer</a>.
+Note carefully that <strong>you can only bet on events with two outcomes</strong>.</p>
+<p>The command will output the proposal as a <code>#</code> delimited string with the binary data encoded with <a href="https://docs.rs/base2048">base2048</a>.</p>
+<blockquote>
+<p>⚠️The binary data includes the on-chain input the proposer is using for the bet.
+These are unencrypted and viewable by anyone.
+Therefore, if you are posting the proposal publicly <strong>you must first ask yourself whether you really want these on-chain inputs to be linked to the identity that posts it</strong>.</p>
+</blockquote>
+<h3 id="change"><a class="header" href="#change">Change</a></h3>
+<p>Currently it is possible to include a change output in the proposal where your excess over the value you want to bet will go.
+While the proposal is active these coins will be reserved for the bet and <code>in-use</code>.
+It is a good idea to use <a href="bet/../wallet/split.html"><code>gun split</code></a> to create an output with the exact amount of coins you want to risk as a proposer to avoid this.
+For technical reasons in the future change outputs for the proposer may be removed so you should get used to doing this now!</p>
+<h2 id="options-3"><a class="header" href="#options-3">Options</a></h2>
+<h3 id="-v---value-value"><a class="header" href="#-v---value-value"><code>-v, --value &lt;value&gt;</code></a></h3>
+<p>The value you want to risk on the bet.
+If you don't provide it you'll be prompted for it.
+Can be <code>all</code> to go &quot;all in&quot; with the coins in your wallet, otherwise an amount and denomination like <code>0.01BTC</code> or <code>10000sat</code>.</p>
+<h3 id="-t---tags-tags"><a class="header" href="#-t---tags-tags"><code>-t, --tags &lt;tags&gt;...</code></a></h3>
+<p>Add human readable tag to the bet as you create it.</p>
+<h3 id="-y---yes-3"><a class="header" href="#-y---yes-3"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-list"><a class="header" href="#gun-bet-list">gun bet list</a></h1>
+<p>List bets.</p>
+<h2 id="synopsis-8"><a class="header" href="#synopsis-8">Synopsis</a></h2>
+<p>List your bets</p>
+<pre><code>gun bet list
+</code></pre>
+<p>Check and update your bets online and on-chain to see if if anything has changed first:</p>
+<pre><code>gun -s bet list
+</code></pre>
+<h2 id="description-3"><a class="header" href="#description-3">Description</a></h2>
+<p>The list of bets has the following fields:</p>
+<ul>
+<li><code>state</code>: The state the bet is, which can be:
+<ul>
+<li><code>proposed</code>: You've proposed this bet.</li>
+<li><code>offered</code>: You've made an offer on this bet.</li>
+<li><code>unconfirmed</code>: The bet transaction has be broadcast but hasn't been confirmed.</li>
+<li><code>confirmed</code>: The bet transaction has been confirmed.</li>
+<li><code>won</code>: You've won the bet (but haven't claimed the winnings).</li>
+<li><code>lost</code>: You lost! You get nothing.</li>
+<li><code>claiming</code>: You've started claiming a won bet.</li>
+<li><code>claimed</code>: You've claimed the winnings successfully.</li>
+<li><code>canceling</code>: You've broadcast a transaction canceling the bet.</li>
+<li><code>canceled</code>: This bet was canceled before confirming either (it could have been canceled by you or your counterparty)</li>
+</ul>
+</li>
+<li><code>outcome-time</code>: When the oracle expects the outcome to be known</li>
+<li><code>in</code>: the duration between now and <code>outcome-time</code> in short human readable form.</li>
+<li><code>risk</code>: How much BTC you stand to lose in this bet.</li>
+<li><code>reward</code>: How much BTC you stand to gain.</li>
+<li><code>tags</code>: human readable strings you can attach to a bet with <a href="bet/./tag.html"><code>gun bet tag</code></a></li>
+<li><code>oracle</code>: The oracle for the bet.</li>
+<li><code>i-bet</code>: which outcome you bet on.</li>
+<li><code>short-id</code>: the end of the <code>event-id</code> of the bet.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-offer"><a class="header" href="#gun-bet-offer">gun bet offer</a></h1>
+<p>Make an offer in response to a <a href="bet/./propose.html">proposal</a>.</p>
+<h2 id="synopsis-9"><a class="header" href="#synopsis-9">Synopsis</a></h2>
+<pre><code>gun bet offer [options] &lt;proposal&gt;
+</code></pre>
+<p>Without providing any options you'll be prompted for remaining details:</p>
+<pre><code>gun bet offer 0.005#h00.ooo#/random/2021-10-31T02:22:00/heads_tails.winner#۸პÂ௬ɦఅɗସઇȿჱ၄ƦফЩञǴऱλ૩ԉกƻ༓ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ǘØ
+</code></pre>
+<p>Go all in on tails and secretly communicate your confidence to the proposer</p>
+<pre><code>gun bet offer -m &quot;bro I am so confident it tails atm&quot; -c &quot;tails&quot; -v all 0.005#h00.ooo#/random/2021-10-31T02:22:00/heads_tails.winner#۸პÂ௬ɦఅɗସઇȿჱ၄ƦফЩञǴऱλ૩ԉกƻ༓ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ǘØ
+</code></pre>
+<h2 id="description-4"><a class="header" href="#description-4">Description</a></h2>
+<p><code>gun bet offer</code> generates an encrypted offer in response to a proposal.
+You choose the outcome you want to bet on with <code>--choice</code> and the <code>--value</code> you are willing to risk to obtain the proposal's coins.
+The offerer also pays and chooses the fee of the bet transaction with the <code>--fee</code> option.</p>
+<h3 id="security"><a class="header" href="#security">Security</a></h3>
+<p>After the proposer sees your offer they may take it at their own discretion.
+This includes taking the offer <strong>after the outcome of the bet is already known</strong> i.e. cheating.
+You must protect yourself against this by <a href="bet/./cancel.html">canceling</a> the offer before a malicious proposer can take advantage of this.</p>
+<blockquote>
+<p>💡 See <a href="bet/./gun-safety.html">GuN Safety</a></p>
+</blockquote>
+<h3 id="privacy-1"><a class="header" href="#privacy-1">Privacy</a></h3>
+<p>Your offer should be indistinguishable from random gibberish to anyone but the proposer.
+This doesn't mean you have to post your offer publicly.
+In practice it's better to send the proposer a direct message with your offer unless you are trying to advertise the fact that you are using <code>gun</code> for your own satisfaction.</p>
+<h3 id="choosing-a-fee"><a class="header" href="#choosing-a-fee">Choosing a fee</a></h3>
+<p>In general you should use a low fee for your offer unless you are betting very close to the event.
+Proposers will generally not discriminate based on the fee and would rather you put as much value in the bet as possible.</p>
+<h2 id="options-4"><a class="header" href="#options-4">Options</a></h2>
+<h3 id="-v---value-value-1"><a class="header" href="#-v---value-value-1"><code>-v, --value &lt;value&gt;</code></a></h3>
+<p>The value you want to risk on the bet.
+If you don't provide it you'll be prompted for it.
+Can be:</p>
+<ul>
+<li><code>all</code> to go &quot;all in&quot; with the coins in your wallet</li>
+<li><code>match</code> to match whatever the proposer is risking.</li>
+<li>An amount and denomination like <code>0.01BTC</code> or <code>10000sat</code></li>
+</ul>
+<h3 id="-c---choice-choice"><a class="header" href="#-c---choice-choice"><code>-c, --choice &lt;choice&gt;</code></a></h3>
+<p>The outcome you want to bet on occurring.
+If you don't provide it you'll be prompted for it.</p>
+<h3 id="-m---message-message"><a class="header" href="#-m---message-message"><code>-m, --message &lt;message&gt;</code></a></h3>
+<p>Attach a message in addition to the offer.
+If you are making the offer in a place with limited characters (like Twitter) the command will warn you if the message is too long.</p>
+<h3 id="-p---pad-pad"><a class="header" href="#-p---pad-pad"><code>-p, --pad &lt;pad&gt;</code></a></h3>
+<p>Pad the ciphertext to a certain length of bytes so observes can't use the ciphertext length to determine the contents.
+The default value is 385 which happens to the amount that will fit the <a href="https://docs.rs/base2048">base2048</a> encoded ciphertext in a single tweet.
+If you don't want padding just add <code>-p0</code>.</p>
+<h3 id="-t---tags-tags-1"><a class="header" href="#-t---tags-tags-1"><code>-t, --tags &lt;tags&gt;...</code></a></h3>
+<p>Add human readable tags to the bet as you create it.
+This is useful so you a can record a short note about where you found the proposal.</p>
+<h3 id="--fee-fee-2"><a class="header" href="#--fee-fee-2"><code>--fee &lt;fee&gt;</code></a></h3>
+<p>Set the fee for the transaction.</p>
+<p>You can choose from:</p>
+<ul>
+<li><code>--fee=rate:4.5</code> set the fee to <em>4.5</em> sats-per-vbyte.</li>
+<li><code>--fee=abs:500</code> set the fee to exactly 500 sats.</li>
+<li><code>--fee=in-blocks:10</code> set the fee so it should get into the chain some time in the next 10 blocks.</li>
+</ul>
+<p>The default is <code>in-blocks:1</code> i.e. set the fee so it gets into the next block.</p>
+<h3 id="-y---yes-4"><a class="header" href="#-y---yes-4"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-inspect"><a class="header" href="#gun-bet-inspect">gun bet inspect</a></h1>
+<p>Inspect an offer or proposal without interacting with it.
+This is convenience command for when want to see the details of an offer or proposal without being prompted to accept it.</p>
+<h2 id="synopsis-10"><a class="header" href="#synopsis-10">Synopsis</a></h2>
+<pre><code>gun bet inspect &lt;subcommand&gt;
+</code></pre>
+<h2 id="subcommands-5"><a class="header" href="#subcommands-5">Subcommands</a></h2>
+<h3 id="proposal"><a class="header" href="#proposal">proposal</a></h3>
+<pre><code>gun bet inspect proposal &lt;proposal&gt;
+</code></pre>
+<p>Inspect a proposal.
+For example:</p>
+<pre><code>gun bet inspect proposal 0.005#h00.ooo#/EPL/match/2021-09-11/LEI_MCI.vs=MCI_win#ஐпმܪപઓܠফએઌΠڃฎƜపԬઉʐڣǧҵЕʕɉɏҵฤຂΘݸլၷ࿋னЉඇໜЈবɇοȾಋѻݙȁ࿅ผɸØ
+</code></pre>
+<h3 id="offer"><a class="header" href="#offer">offer</a></h3>
+<pre><code>gun bet inspect offer &lt;bet-id&gt; &lt;offer&gt;
+</code></pre>
+<p>Inspect an offer in response to one of your proposals.
+The following example won't work because you don't have the key to decrypt the offer.</p>
+<pre><code>gun bet inspect offer 33 ପҊڧოӵիПܬߧɓئҙݒතʘȄݮɑရཪჟݿྋଟආ࿊ޕȌϐ௸ɫӂǅʉཌɭϽඨओȅଗɡވइဟЫښಊჱߓघɔȱߝŨǆชʌȋȓƥളʯǡಅਠۍॠܡԇȪݯНପżଠЋघјʝഭӏրঈॽဘɷγȌళളஜबܠܟၺѧջไ༕ڎʬƂǭදܖɓਐݢɗජฬЩݳރݺѮʃȦҰƬஹԭގఏȽම௵ڄޅ௵ੜӹɓԧڬঙਬɩצཪၛனʡҘɻ৺Ƨō
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-reply"><a class="header" href="#gun-bet-reply">gun bet reply</a></h1>
+<p>Reply with an encrypted message rather than an <a href="bet/./offer.html">offer</a> to a <a href="bet/./propose.html">proposal</a>.</p>
+<h2 id="synopsis-11"><a class="header" href="#synopsis-11">Synopsis</a></h2>
+<pre><code>gun bet reply [OPTIONS] &lt;proposal&gt;
+</code></pre>
+<p>Slide into someone's DMs:</p>
+<pre><code>echo &quot;follow me so I can DM you&quot; | gun bet reply  0.01#h00.ooo#/random/2021-09-09T08:14:00/heads_tails.winner#ഩǠɢѩչਠനՎȆଞગਐעͻڢѓӫҹڣလߛϊرКɏҵฤຂΘݸլၷ࿋னЉඇໜЈবɇοȾಋѻݙȁ࿅ผɱƂइŏǱێեЯಐۇฝဆসϑ࿖ɀჵਊၒβԼјஊڠၮɈ།
+</code></pre>
+<h2 id="options-5"><a class="header" href="#options-5">Options</a></h2>
+<h3 id="-m---message-message-1"><a class="header" href="#-m---message-message-1"><code>-m, --message &lt;message&gt;</code></a></h3>
+<p>Set the message for the reply with an argument.
+If this is omitted it will read the message from stdin.</p>
+<h3 id="-p---pad-pad-1"><a class="header" href="#-p---pad-pad-1"><code>-p, --pad &lt;pad&gt;</code></a></h3>
+<p>Pad the ciphertext to a certain length of bytes so observes can't use the ciphertext length to guess the contents.
+The default value is 385 which is number of bytes for that will fit in single tweet when <a href="https://github.com/LLFourn/rust-base2048">base2048</a>.
+If you don't want padding just add <code>-p0</code>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-take"><a class="header" href="#gun-bet-take">gun bet take</a></h1>
+<p>Take an offer to one of your <a href="bet/./propose.html">proposals</a>.</p>
+<h2 id="synopsis-12"><a class="header" href="#synopsis-12">Synopsis</a></h2>
+<pre><code>gun bet take [options] &lt;id&gt; &lt;encrypted-offer&gt;
+</code></pre>
+<h2 id="description-5"><a class="header" href="#description-5">Description</a></h2>
+<p><code>gun bet take</code> displays details about an offer and prompts you to take it or not.
+It is up to the user to figure out what proposal this offer was in relation to.
+You may use <code>gun bet list</code> to see the ids of all your proposals.</p>
+<p>Taking the offer will prompt you to broadcast the bet transaction with the bet output.</p>
+<h3 id="security-1"><a class="header" href="#security-1">Security</a></h3>
+<p>Try to avoid taking an offer close to when an event transpires.
+If the offer's fee is low the bet transaction may not be confirmed until after the event has transpired. 
+A cheating offerer may then try to cancel the bet if things go against them before it confirms.</p>
+<h2 id="options-6"><a class="header" href="#options-6">Options</a></h2>
+<h3 id="-y---yes-5"><a class="header" href="#-y---yes-5"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<h3 id="--print-tx-2"><a class="header" href="#--print-tx-2"><code>--print-tx</code></a></h3>
+<p>Print the tx as hex instead of broadcasting it.
+This will assume you're going to broadcast the tx yourself.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-show"><a class="header" href="#gun-bet-show">gun bet show</a></h1>
+<p>Show more details about a bet.</p>
+<h2 id="synopsis-13"><a class="header" href="#synopsis-13">Synopsis</a></h2>
+<pre><code>gun bet show [options] &lt;id&gt;
+</code></pre>
+<h2 id="options-7"><a class="header" href="#options-7">Options</a></h2>
+<h3 id="-r---raw"><a class="header" href="#-r---raw"><code>-r, --raw</code></a></h3>
+<p>Print the raw entry in the database.
+This should be used for debugging only.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-forget"><a class="header" href="#gun-bet-forget">gun bet forget</a></h1>
+<p>Delete a bet from your local database.</p>
+<blockquote>
+<p>💡There are some bets you'd rather forget about but this command can't do anything about that.</p>
+</blockquote>
+<h2 id="synopsis-14"><a class="header" href="#synopsis-14">Synopsis</a></h2>
+<pre><code>gun bet forget [bet-ids]...
+</code></pre>
+<h2 id="description-6"><a class="header" href="#description-6">Description</a></h2>
+<p>This command just deletes a bet from your local database.
+This is obviously dangerous depending on the state of the bet so <code>gun bet forget</code> will stop you from deleting your coins or warn you when you need to be careful.</p>
+<blockquote>
+<p>⚠️ Unless you're sure you understand the impact of forgetting a bet use <a href="bet/./cancel.html"><code>gun bet cancel</code></a> instead.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-cancel"><a class="header" href="#gun-bet-cancel">gun bet cancel</a></h1>
+<p>Cancel a bet by broadcasting a double spending transaction.</p>
+<h2 id="synopsis-15"><a class="header" href="#synopsis-15">Synopsis</a></h2>
+<pre><code>gun bet cancel [options] [bet-ids]...
+</code></pre>
+<h2 id="description-7"><a class="header" href="#description-7">Description</a></h2>
+<p>To fully cancel a bet you double spend one of your declared inputs to the bet.
+Either the offerer or the proposer can cancel a bet before it has been confirmed.</p>
+<p>On the proposer's side canceling is just good etiquette.
+By canceling the proposal everyone who has made an offer doesn't have to make a transaction canceling their offer.
+If a proposer is sure that no one will make an offer to a proposal they can instead <a href="bet/./forget.html">forget</a> about it.</p>
+<p>An offerer must cancel any offer they've made that hasn't been taken (or canceled) prior to the outcome time.</p>
+<p>To cancel a bet it must be in the <code>proposed</code>, <code>offered</code> or <code>canceling</code> state.
+You can cancel many bets at the same time.
+If one of the bets being canceled is in the <code>canceling</code> state you must make sure that the feerate set by <code>--fee</code> is higher than the previous canceling transaction's fee.</p>
+<blockquote>
+<p>💡 See <a href="bet/./gun-safety.html">GuN Safety</a></p>
+</blockquote>
+<h2 id="options-8"><a class="header" href="#options-8">Options</a></h2>
+<h3 id="--print-tx-3"><a class="header" href="#--print-tx-3"><code>--print-tx</code></a></h3>
+<p>Print the tx as hex instead of broadcasting it.
+This will assume you're going to broadcast the tx yourself.</p>
+<h3 id="-y---yes-6"><a class="header" href="#-y---yes-6"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<h3 id="--fee-fee-3"><a class="header" href="#--fee-fee-3"><code>--fee &lt;fee&gt;</code></a></h3>
+<p>Set the fee for the transaction.</p>
+<p>You can choose from:</p>
+<ul>
+<li><code>--fee=rate:4.5</code> set the fee to <em>4.5</em> sats-per-vbyte.</li>
+<li><code>--fee=abs:500</code> set the fee to exactly 500 sats.</li>
+<li><code>--fee=in-blocks:10</code> set the fee so it should get into the chain some time in the next 10 blocks.</li>
+</ul>
+<p>The default is <code>in-blocks:1</code> i.e. set the fee so it gets into the next block.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-claim"><a class="header" href="#gun-bet-claim">gun bet claim</a></h1>
+<p>Claim your winnings.</p>
+<h2 id="synopsis-16"><a class="header" href="#synopsis-16">Synopsis</a></h2>
+<pre><code>gun bet claim [options]
+</code></pre>
+<h2 id="description-8"><a class="header" href="#description-8">Description</a></h2>
+<p>Creates a transaction spending any coins you own from bets and sends them to an internal wallet address.</p>
+<blockquote>
+<p>Note that you can use <a href="bet/../wallet/send.html"><code>send</code></a> to do this if you want to send the coins to an arbitrary address ? 
+rather than your own wallet.</p>
+</blockquote>
+<h2 id="options-9"><a class="header" href="#options-9">Options</a></h2>
+<h3 id="--fee-fee-4"><a class="header" href="#--fee-fee-4"><code>--fee &lt;fee&gt;</code></a></h3>
+<p>Set the fee for the transaction.</p>
+<p>You can choose from:</p>
+<ul>
+<li><code>--fee=rate:4.5</code> set the fee to <em>4.5</em> sats-per-vbyte.</li>
+<li><code>--fee=abs:500</code> set the fee to exactly 500 sats.</li>
+<li><code>--fee=in-blocks:10</code> set the fee so it should get into the chain some time in the next 10 blocks.</li>
+</ul>
+<p>The default is <code>in-blocks:1</code> i.e. set the fee so it gets into the next block.</p>
+<h3 id="--print-tx-4"><a class="header" href="#--print-tx-4"><code>--print-tx</code></a></h3>
+<p>Print the tx as hex instead of broadcasting it.
+This will assume you're going to broadcast the tx yourself.</p>
+<h3 id="-y---yes-7"><a class="header" href="#-y---yes-7"><code>-y, --yes</code></a></h3>
+<p>Skip all <code>[y/n]</code> prompts by just answering <code>yes</code> to all of them.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gun-bet-tag"><a class="header" href="#gun-bet-tag">gun bet tag</a></h1>
+<p>Tag a bet with a short string.</p>
+<h2 id="synopsis-17"><a class="header" href="#synopsis-17">Synopsis</a></h2>
+<p>Add a tag</p>
+<pre><code>gun bet tag add &lt;bet-id&gt; &lt;tag&gt;
+</code></pre>
+<p>Remove a tag</p>
+<pre><code>gun bet tag remove &lt;bet-id&gt; &lt;tag&gt;
+</code></pre>
+<h2 id="description-9"><a class="header" href="#description-9">Description</a></h2>
+<p>Tagging helps you remember how a bet originated.
+It can also be done at bet creation time with the <a href="bet/./offer.html#-t---tags-tags"><code>--tags</code></a> flag.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="offer-tutorial"><a class="header" href="#offer-tutorial">Offer tutorial</a></h1>
+<p>This is a tutorial that focuses on how to make an offer to a proposal which is a wacky string like:</p>
+<pre><code>0.005#h00.ooo#/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win#ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ
+</code></pre>
+<p>Accounts like <a href="https://twitter.com/GoUpNumber">@GoUpNumber</a> consistently make proposals and look for the best offers.
+To see how to make proposals yourself see <a href="bet/./propose.html"><code>gun bet propose</code></a>.</p>
+<h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
+<p>This tutorial is for people who want to try out betting with <code>gun</code> but don't want to RTFM too much.
+You should meet the following criteria:</p>
+<ol>
+<li>Comfortable with command line applications.</li>
+<li>Don't mind losing coins due to bad bets or technical malfunctions. You are happy to consider it a donation to science.</li>
+<li>Able to report bugs on GitHub.</li>
+</ol>
+<h2 id="install-1"><a class="header" href="#install-1">Install</a></h2>
+<p>Follow instructions in <a href="bet/../install.html">install</a> and <a href="bet/../setup/setup.html">setup</a>.</p>
+<p>The simplest setup you can do is just running:</p>
+<pre><code>gun setup seed
+</code></pre>
+<h2 id="put-some-coins-in-your-wallet"><a class="header" href="#put-some-coins-in-your-wallet">Put some coins in your wallet</a></h2>
+<blockquote>
+<p>💡 It's a good idea to coin join your coins before sending them to gun (or doing anything really!).
+If you don't feel comfortable betting coins at this stage you can join the fun by using <a href="bet/./reply.html"><code>gun bet reply</code></a> to post an encrypted message that looks like an offer instead.</p>
+</blockquote>
+<p>To get a wallet address run:</p>
+<pre><code>gun address new
+</code></pre>
+<p>And you'll see an address.
+Send a small amount of coins to it if you're just getting started.</p>
+<p>To check when the coins come in you can do <code>gun -s balance</code> or <code>gun -s utxo list</code> or <code>gun -s tx list</code>.
+The most important thing is adding the <code>-s</code> flag so <code>gun</code> checks the blockchain before displaying the result.
+Without <code>-s</code> the command will just display what's already in the database.</p>
+<h2 id="find-a-proposal"><a class="header" href="#find-a-proposal">Find a Proposal</a></h2>
+<p>A proposal contains the event that will be bet on and the amount the proposer is willing to risk on it.
+To promote this experiment <a href="https://twitter.com/GoUpNumber">@GoUpNumber</a> is frequently posting proposals on twitter and on their Discord channel (<a href="https://discord.gg/MB27cDJyrR">invite link</a>).</p>
+<p>A proposal looks like this:</p>
+<pre><code>0.005#h00.ooo#/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win#ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ
+</code></pre>
+<p>It contains several parts split up by the <code>#</code> character.</p>
+<ol>
+<li><code>0.005</code>:  The amount in BTC that is being risked.</li>
+<li><code>h00.ooo</code>: The oracle in this case is <a href="https://h00.ooo">h00.ooo</a>.</li>
+<li><code>/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win</code>: The event the proposal is on.
+This can be read as &quot;Whether Manchester United beats Leicester City in their EPL (English Premier League) match on 2021-10-16&quot;.
+Note that <code>gun</code> can only bet on events with two possible outcomes.</li>
+<li><code>ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ</code>: cryptographic input to the bet. A public key and list of inputs.</li>
+</ol>
+<h2 id="trust-the-oracle"><a class="header" href="#trust-the-oracle">Trust the oracle</a></h2>
+<p>Before betting with <code>h00.ooo</code> we have to tell <code>gun</code> we trust it.
+To trust <code>h00.ooo</code> run:</p>
+<pre><code>gun bet oracle add h00.ooo
+</code></pre>
+<p>It's fine to accept whatever you are given at this stage.</p>
+<h2 id="making-your-offer"><a class="header" href="#making-your-offer">Making your offer</a></h2>
+<p>When you've found a proposal you want to bet on make an offer to it.
+We'll make an offer to the proposal above.
+We must decide whether you think Manchester United will win or not and how much you are willing to risk.</p>
+<p>Run the offer command like so:</p>
+<pre><code>gun bet offer 0.005#h00.ooo#/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win#ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ
+</code></pre>
+<p>You'll be prompted to choose:</p>
+<ol>
+<li>Which outcome you want to bet on. In this case <code>true</code> if you think Manchester United will win otherwise <code>false</code>.</li>
+<li>How much you want to risk to get the 500,000 sats on offer in the proposal.
+You can bet as low as 1000 sats to give yourself 1 to 500 risk reward ratio.
+<a href="https://twitter.com/GoUpNumber">@GoUpNumber</a> will always take it if they don't get any better offers.</li>
+</ol>
+<p>The <a href="https://docs.rs/base2048">base2048</a> gibberish you get as output is encrypted so that only the proposer can read it.
+Copy it and paste it somewhere the proposer can see it e.g. reply to the tweet, send them a direct message etc.</p>
+<blockquote>
+<p>💡 Consider posting the offer under a colorful pseudonym so not even the proposer knows who they're betting with!</p>
+</blockquote>
+<h3 id="changing-the-default-fee"><a class="header" href="#changing-the-default-fee">Changing the default fee</a></h3>
+<p>As the offerer you choose the fee that the bet transaction will pay.
+The default fee <code>gun</code> chooses is quite high (it attempts to get it into the next block i.e. <code>--fee in-blocks:1</code>).
+This is inappropriate for most offers unless they are being made last minute.
+For example if you are betting on match being played a week from now use something like <code>--fee in-blocks:30</code> so that it should confirm some time in the next 30 blocks after the proposer broadcasts it at the current fee rate.</p>
+<pre><code>gun bet offer --fee in-blocks:30 0.005#h00.ooo#/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win#ৠöഓཀসƵ୯รແྋŸǢঊಹహĈၐ೨ø໕Ǜœબ೮ǇЧ༃ཆɁঢӛႱ၃ಢͱธྈͰଢƿɧƶവϳॻŹဪ໖ƸØ
+</code></pre>
+<h2 id="monitor-you-offer"><a class="header" href="#monitor-you-offer">Monitor you offer</a></h2>
+<p>The easiest way to monitor the offer is to do:</p>
+<pre><code>gun -s bet list
+</code></pre>
+<p>Immediately after you've made the offer it will be in the <code>offered</code> state.
+When/if the proposer has taken your offer it will transition to the <code>unconfirmed</code> state and then eventually the <code>confirmed</code> state when it ends up in the chain.
+If the proposer chooses a different offer it will end up in the <code>canceled</code> state (or if you use <a href="bet/./cancel.html"><code>gun bet cancel</code></a> to cancel it).</p>
+<p>Take note of how long there is until whatever you are betting on takes place.
+If the bet is still not in the <code>confirmed</code> state a just prior to the event starting you should run <code>gun bet cancel &lt;bet-id&gt;</code> where bet id is the number in the first column of the <code>gun bet list</code> output.
+If you are forced to manually cancel your offer you should consider avoiding betting with that proposer again as it is bad manners for a proposer to leave this to you.</p>
+<h2 id="claiming-your-winnings"><a class="header" href="#claiming-your-winnings">Claiming your winnings</a></h2>
+<p>If it doesn't get canceled, eventually your bet should go from the <code>confirmed</code> to the <code>won</code> or <code>lost</code> state.
+Just keep running <code>gun -s bet list</code> to check this.</p>
+<p>If you go into the <code>lost</code> state you don't need to do anything further.
+Thank you for your heroic sacrifice.</p>
+<p>If you go into the <code>won</code> state you can use <code>gun bet claim</code> to put the coins back into your main wallet.
+Alternatively, <a href="bet/../wallet/send.html"><code>gun send</code></a> will always spend any won bets you have open by default.</p>
+<p>There is no strict time limit to claiming won bets but if you have data loss while the bet is in the <code>won</code> state the coins will be difficult to recover (See <a href="bet/../backup-and-recovery.html">backup and recovery</a>).</p>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<h3 id="oracle-hasnt-attested"><a class="header" href="#oracle-hasnt-attested">Oracle hasn't attested</a></h3>
+<p>If you're stuck in confirmed long after the event was due the oracle may have messed up.
+The easiest way is to find the event on <a href="https://outcome.observer">outcome.observer</a> but you can also manually visit the URL. 
+For example go to <a href="https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win">https://h00.ooo/s/EPL/match/2021-10-16/LEI_MUN.vs=MUN_win</a> in your browser and see if the <code>attestation</code> field is filled in.</p>
+<blockquote>
+<p>⚠️ In the current protocol, if the oracle disappears of fails to ever attest to the event you have both lost your coins.
+The oracle <code>h00.ooo</code> is run by <a href="https://github.com/LLFourn">LLFourn</a> so in this case you can blame him for that!</p>
+</blockquote>
+<h3 id="the-oracle-has-attested-to-the-wrong-thing"><a class="header" href="#the-oracle-has-attested-to-the-wrong-thing">The Oracle has attested to the wrong thing</a></h3>
+<p>All you can do is publicly shame the operator of the oracle.</p>
+<h3 id="something-else"><a class="header" href="#something-else">Something else</a></h3>
+<p>Report this as a bug on <a href="https://github.com/GoUpNumber/gun">GitHub</a> or contact LLFourn in some other way.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bet-protocol-technical-overview"><a class="header" href="#bet-protocol-technical-overview">Bet Protocol Technical Overview</a></h1>
+<blockquote>
+<p>💡 You don't have to read this.
+This is only for people who are interested in how the betting protocol actually works.</p>
+</blockquote>
+<p>The protocol takes two messages and one on-chain transaction.</p>
+<p>The first message, the &quot;proposal&quot;, contains a public key (<code>P1</code>) which the second message, the &quot;offer&quot;, will be encrypted under.
+The offer contains a public key (<code>P2</code>) and a ciphertext.
+The offer is encrypted by deriving a key from the <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman</a> key between the two keys.</p>
+<p>The two public keys are also used to construct the bet output which holds the coins until the outcome has been decided by the oracle.
+The script locking the coins is a <strong>1-of-2</strong> with keys like:</p>
+<pre><code>1-of-2(P1 + O1, P2 + O2)
+</code></pre>
+<p>Where <code>P1</code> and <code>O1</code> represent the public key of the proposer and the outcome they are betting on respectively (<code>P2</code> and <code>O2</code> represent the same for the offerer).
+If the oracle releases <code>O1</code> then the proposer will get the coins otherwise if the oracle releases <code>O2</code> the offerer gets them.
+The Diffie-Hellman keys is also used to produce secret randomness (<code>R1</code> and <code>R2</code>) which both parties use to randomize the output script.
+So the output script is really something like:</p>
+<pre><code>1-of-2(P1 + O1 + R1, P2 + O2 + R2)
+</code></pre>
+<p>This randomization means the output keys can't bet associated with the proposal and offer keys (<code>P1</code> and <code>P2</code>).
+The order of the keys in the 1-of-2 is also randomized.</p>
+<p>When the winner learns the secret for <code>O1</code> or <code>O2</code> from the oracle they can claim the coins because they can construct the secret key for <code>P1 + O1 + R1</code> or <code>P2 + O2 + R2</code>.
+Note there is no real hurry for them to do so except that the coins can be <a href="bet/../backup-and-recovery.html">recovered from seed words</a> once they have been properly claimed.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="formatting-output"><a class="header" href="#formatting-output">Formatting Output</a></h1>
+<p>Apart from the default human readable style format any command can be modified to format its output in one of two more computer readable formats.</p>
+<h2 id="json--j---json"><a class="header" href="#json--j---json">JSON <code>-j, --json</code></a></h2>
+<p>This format is output for reading into other software.
+Coin amounts are formatted as sats and  <code>DateTime</code>s will be formatted as UNIX timestamps.</p>
+<p><code>gun -j &lt;command&gt; ..</code> will output JSON.</p>
+<p>The following will output how much you've lost in bets</p>
+<pre><code>gun -j bet list | jq 'map(select(.state == &quot;lost&quot;).risk) | add'
+
+</code></pre>
+<h2 id="tab-separated--t---tabs"><a class="header" href="#tab-separated--t---tabs">Tab separated <code>-t, --tabs</code></a></h2>
+<p>This format it useful for UNIX command line tools because it tab separates each field so things like <code>cut(1)</code> just work.</p>
+<p>The following will output how much you've lost in bets</p>
+<pre><code>gun -t bet list | awk '$2 == &quot;lost&quot;{ lost += $5 } END { print lost }'
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>

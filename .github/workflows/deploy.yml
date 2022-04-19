@@ -1,0 +1,35 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install mdbook
+        run: |
+          curl -sL https://github.com/rust-lang/mdBook/releases/download/v0.4.15/mdbook-v0.4.15-x86_64-unknown-linux-gnu.tar.gz | tar xvz && chmod u+x mdbook &&
+          echo `pwd`/mdbook >> $GITHUB_PATH
+      - name: Install linkcheck
+        run: |
+          mkdir -p mdbook-linkcheck
+          cd mdbook-linkcheck
+          curl -sL https://github.com/Michael-F-Bryan/mdbook-linkcheck/releases/latest/download/mdbook-linkcheck.x86_64-unknown-linux-gnu.zip -o mdbook-linkcheck.zip && unzip mdbook-linkcheck.zip
+          echo `pwd`/mdbook-linkcheck >> $GITHUB_PATH
+      - name: Deploy Github Pages
+        run: |
+          git worktree add gh-pages gh-pages
+          git config user.name "Deploy from CI"
+          git config user.email ""
+          cd gh-pages
+          git update-ref -d refs/heads/gh-pages
+          rm -rf *
+          mv ../book/html .
+          git add .
+          git commit -m "Deploy $GITHUB_SHA" to gh-pages
+          git push --force
